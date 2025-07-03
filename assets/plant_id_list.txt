@@ -1,0 +1,94 @@
+0: Aloe Vera
+1: Rasna
+2: Arive‑Dantu
+3: Palm Tree
+4: Jackfruit
+5: Neem
+6: Brahmi
+7: Mullugoranta
+8: Indian Spinach
+9: Indian Mustard
+10: Papaya
+11: Karanda
+12: Lemon
+13: Turmeric
+14: Lemon Grass
+15: Roxburgh Fig
+16: Peepal Tree
+17: Hibiscus
+18: Jasmine
+19: Patharchatta
+20: Mango
+21: Mint
+22: Drumstick Tree
+23: Jamaica Cherry
+24: Curry Leaf
+25: Oleander
+26: Night-flowering Jasmine (Parijata)
+27: Holy Basil (Tulsi)
+28: Betel Leaf
+29: Indian Borage (Mexican Mint)
+30: Rosea (Plumbago indica)
+31: Indian Beech
+32: Guava
+33: Pomegranate
+34: Sandalwood
+35: Jamun
+36: Rose Apple
+37: Crape Jasmine
+38: Amruthaballi (Giloy)
+39: Fenugreek
+
+
+41: Doddapatre (Indian Borage)
+42: Bel Leaf (Wood Apple)
+43: Indian Gooseberry (Amla)
+44: Guduchi (Giloy)
+45: Kunthe (Indian Pennywort)
+46: Malkheda
+47: Thimma (Wild Ginger)
+48: Nagarmotha (Nutgrass)
+49: Japa
+50: Nagakesara
+51: Nirgundi
+52: Murivenna
+53: Bhumyamalaki
+54: Punarnava
+55: Manjal Karisale (Wild Turmeric)
+56: Shankhapushpi
+57: Kakamachi (Black Nightshade)
+58: Agave
+59: Kolikehannu (Wild Strawberry Tree)
+60: Lakshmi Taru
+61: Matti Soppu (False Daisy)
+62: Karibevu (Chinese Chaste Tree)
+63: Grape Ivy
+67: Chocolate Nerved Lady Fern
+68: Indian Sarsaparilla
+69: Lippia nodiflora (Mat grass)
+70: Indian Valerian
+71: Asystasia Gangetica (Chinese Violet)
+72: Calotropis Gigantea (Giant Milkweed)
+73: Cassia Tora (Sickle Senna)
+74: Portulaca Oleracea (Purslane)
+75: Tridax Procumbens (Coat Buttons)
+76: Euphorbia Hirta (Asthma Weed)
+77: Alternanthera Sessilis (Sessile Joyweed)
+78: Leucas Aspera (Thumbe)
+79: Mikania Micrantha (Mile-a-minute weed)
+80: Oxalis Corniculata (Creeping Wood Sorrel)
+82: Ipomoea Aquatica (Water Spinach)
+83: Marsilea Quadrifolia (Water Clover)
+84: Alternanthera Philoxeroides (Alligator Weed)
+85: Commelina Benghalensis (Benghal Dayflower)
+86: Achyranthes Aspera (Prickly Chaff Flower)
+87: Clerodendrum Phillyreifolium (East Indian Glory Bower)
+88: Glycyrrhiza Glabra (Licorice)
+89: Stephania Glabra (Indian Serpent Wood)
+90: Phyllanthus amarus (Stonebreaker)
+91: Acalypha Indica (Indian Copperleaf)
+93: Alysicarpus Vaginalis (Moneywort)
+94: Croton Tiglium (Purging Croton)
+95: Leea Indica (Bhrungraj Spurge)
+96: Sesbania Grandiflora (Hummingbird Tree)
+97: Tamarindus Indica (Tamarind)

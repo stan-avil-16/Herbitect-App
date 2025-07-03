@@ -1,0 +1,2692 @@
+{
+  "scans": {
+    "droDxNNIxWeXaG2XJ5JR0CKSc4E3": {
+      "-OU15u77PU7C7mz6NBYB": {
+        "classId": 4,
+        "confidence": 0.9589279935009074,
+        "plantName": "4 Artocarpus Heterophyllus (Jackfruit)",
+        "timestamp": "2025-07-01T00:01:20.329321"
+      }
+    }
+  },
+
+
+  "search": {
+    "NvEdmCElXvcc1Q0xdIdLUIB96Ed2": {
+      "-OU1XDBQuW6hR8_Kh6e_": {
+        "query": "adhesive needs",
+        "resultPlantIds": [
+          "4"
+        ],
+        "timestamp": "2025-07-01T02:00:40.404411"
+      }
+    },
+    "droDxNNIxWeXaG2XJ5JR0CKSc4E3": {
+      "-OU-Uy7pjvQEu2V2hnlb": {
+        "query": "acne",
+        "resultPlantIds": [
+          "0",
+          "12",
+          "17",
+          "34"
+        ],
+        "timestamp": "2025-06-30T16:31:35.914050"
+      },
+      "-OU-V30DUIKVcR9lQXKU": {
+        "query": "adhesive needs",
+        "resultPlantIds": [
+          "4"
+        ],
+        "timestamp": "2025-06-30T16:32:00.013870"
+      },
+      "-OU-VCB6VFdE0fOZ-S--": {
+        "query": "digestion",
+        "resultPlantIds": [
+          "4",
+          "8",
+          "9",
+          "12",
+          "20",
+          "21",
+          "24",
+          "28",
+          "29",
+          "30",
+          "33",
+          "35",
+          "39",
+          "95",
+          "96",
+          "97"
+        ],
+        "timestamp": "2025-06-30T16:32:37.575303"
+      },
+      "-OU0rNjY8ggg51eGE-3o": {
+        "query": "constipation",
+        "resultPlantIds": [
+          "8",
+          "17",
+          "18",
+          "26",
+          "58",
+          "73",
+          "97"
+        ],
+        "timestamp": "2025-06-30T22:53:31.421221"
+      },
+      "-OU1N0wkhxb0B554EYyD": {
+        "query": "memory",
+        "resultPlantIds": [
+          "6",
+          "45",
+          "56"
+        ],
+        "timestamp": "2025-07-01T01:16:08.809440"
+      }
+    }
+  },
+
+  
+  "users": {
+    "NvEdmCElXvcc1Q0xdIdLUIB96Ed2": {
+      "bookmarks": {
+        "0": 0.9635217054511287,
+        "3": 0.9834670524410285,
+        "16": 0.9599210525180695,
+        "38": 0.973292521910281
+      },
+      "email": "vishakhadputhran@gmail.com",
+      "name": "Pranaav Vish Raja",
+      "role": "user",
+      "timestamp": "2025-06-27T15:27:07.765280"
+    },
+    "XQSqNlhGvLQ6Xn126Qpw8UJzUof1": {
+      "email": "avilstan6@gmail.com",
+      "name": "Stan Avil",
+      "role": "user",
+      "timestamp": "2025-06-29T13:44:17.045720"
+    },
+    "droDxNNIxWeXaG2XJ5JR0CKSc4E3": {
+      "bookmarks": {
+        "5": 0.9733893961626805,
+        "6": 0.9847598559699229,
+        "20": 0.90426358449632,
+        "29": 0.8636030884424244
+      },
+      "email": "nithesh0628@gmail.com",
+      "name": "Nithesh",
+      "role": "user",
+      "timestamp": "2025-06-30T12:46:50.864165"
+    },
+    "neiX12JM5mZsvQxHxlmtwvyJ5R03": {
+      "email": "admin@gmail.com",
+      "name": "Admin",
+      "role": "admin",
+      "timestamp": "2025-06-28T13:50:48.863659"
+    },
+    "rNpWOgxopfSOUt2SkBMwasXXGue2": {
+      "bookmarks": {
+        "0": 0.9635217054511287,
+        "5": 0.9733893961626805,
+        "38": 0.973292521910281
+      },
+      "email": "chaithrasonu10@gmail.com",
+      "name": "Chaithra",
+      "role": "user",
+      "timestamp": "2025-06-25T11:13:23.485456"
+    }
+  },
+
+
+  "spotlight": [
+    {"id": 1, "spotlight": "🌿 Did you know Aloe Vera helps soothe burns and improves skin health?"},
+    {"id": 2, "spotlight": "🌿 Turmeric contains curcumin, a natural anti-inflammatory compound."},
+    {"id": 3, "spotlight": "🌿 Neem leaves are renowned for their antibacterial properties and are used in traditional dental care."},
+    {"id": 4, "spotlight": "🌿 Tulsi (Holy Basil) boosts immunity and relieves stress."},
+    {"id": 5, "spotlight": "🌿 Ashwagandha is known as an adaptogen, helping the body manage stress."},
+    {"id": 6, "spotlight": "🌿 Ginger tea can help relieve nausea and improve digestion."},
+    {"id": 7, "spotlight": "🌿 Moringa leaves are packed with vitamins and minerals, often called the 'miracle tree'."},
+    {"id": 8, "spotlight": "🌿 Amla (Indian Gooseberry) is a rich source of Vitamin C and antioxidants."},
+    {"id": 9, "spotlight": "🌿 Peppermint tea can soothe headaches and aid digestion."},
+    {"id": 10, "spotlight": "🌿 Brahmi is used in Ayurveda to enhance memory and focus."},
+    {"id": 11, "spotlight": "🌿 Fenugreek seeds can help regulate blood sugar levels."},
+    {"id": 12, "spotlight": "🌿 Licorice root is used to soothe sore throats and coughs."},
+    {"id": 13, "spotlight": "🌿 Saffron is the world's most expensive spice and is known for its mood-boosting properties."},
+    {"id": 14, "spotlight": "🌿 Cinnamon helps regulate blood sugar and has anti-inflammatory effects."},
+    {"id": 15, "spotlight": "🌿 Cardamom is called the 'queen of spices' and aids in digestion."},
+    {"id": 16, "spotlight": "🌿 Clove oil is a natural remedy for toothaches."},
+    {"id": 17, "spotlight": "🌿 Garlic boosts immunity and supports heart health."},
+    {"id": 18, "spotlight": "🌿 Hibiscus tea is rich in antioxidants and supports heart health."},
+    {"id": 19, "spotlight": "🌿 Rose petals are used in Ayurveda for their cooling and calming effects."},
+    {"id": 20, "spotlight": "🌿 Chamomile tea helps promote relaxation and better sleep."},
+    {"id": 21, "spotlight": "🌿 Aloe Vera gel is also used as a natural hair conditioner."},
+    {"id": 22, "spotlight": "🌿 Turmeric paste is applied to wounds for faster healing in traditional medicine."},
+    {"id": 23, "spotlight": "🌿 Neem oil is a natural pesticide and skin remedy."},
+    {"id": 24, "spotlight": "🌿 Tulsi leaves are often chewed to relieve cold symptoms."},
+    {"id": 25, "spotlight": "🌿 Ashwagandha is sometimes called Indian ginseng."},
+    {"id": 26, "spotlight": "🌿 Ginger can help reduce muscle pain after exercise."},
+    {"id": 27, "spotlight": "🌿 Moringa seeds can purify water."},
+    {"id": 28, "spotlight": "🌿 Amla is a key ingredient in Chyawanprash, a traditional health supplement."},
+    {"id": 29, "spotlight": "🌿 Peppermint oil is a natural insect repellent."},
+    {"id": 30, "spotlight": "🌿 Brahmi is often used in herbal hair oils for scalp health."},
+    {"id": 31, "spotlight": "🌿 Guduchi (Giloy) is called the 'root of immortality' in Ayurveda for its immune-boosting effects."},
+    {"id": 80, "spotlight": "🌿 Indian Gooseberry is a key ingredient in Triphala and Chyawanprash."},
+    {"id": 81, "spotlight": "🌿 Indian Laburnum (Amaltas) is used as a gentle laxative in Ayurveda."},
+    {"id": 82, "spotlight": "🌿 Indian Mallow leaves are used to treat wounds and inflammation."},
+    {"id": 83, "spotlight": "🌿 Indian Mulberry (Noni) juice is believed to boost immunity."},
+    {"id": 84, "spotlight": "🌿 Indian Nightshade is used for respiratory and joint health."},
+    {"id": 85, "spotlight": "🌿 Indian Oak bark is used for its astringent properties."},
+    {"id": 86, "spotlight": "🌿 Indian Sarsaparilla root is used as a blood purifier and cooling tonic."},
+    {"id": 87, "spotlight": "🌿 Indian Screw Tree bark is used for dental care in folk medicine."},
+    {"id": 88, "spotlight": "🌿 Indian Sorrel leaves are rich in Vitamin C and used in chutneys."},
+    {"id": 89, "spotlight": "🌿 Indian Spider Plant is used for its cooling and diuretic effects."},
+    {"id": 90, "spotlight": "🌿 Indian Valerian root is used to promote restful sleep."},
+    {"id": 91, "spotlight": "🌿 Indian Wormwood is used for digestive and liver health."},
+    {"id": 92, "spotlight": "🌿 Indigo leaves are used as a natural hair dye and for scalp health."},
+    {"id": 93, "spotlight": "🌿 Ivy gourd leaves are used in traditional remedies for diabetes."},
+    {"id": 94, "spotlight": "🌿 Jackfruit seeds are roasted and eaten for their nutritional value."},
+    {"id": 95, "spotlight": "🌿 Jasmine flowers are used in teas and for their calming aroma."},
+    {"id": 96, "spotlight": "🌿 Jujube fruit is used to promote relaxation and better sleep."},
+    {"id": 97, "spotlight": "🌿 Karela (Bitter Gourd) juice is believed to help manage blood sugar."},
+    {"id": 98, "spotlight": "🌿 Kokum fruit is used in cooling summer drinks and for digestion."},
+    {"id": 99, "spotlight": "🌿 Kusha grass is considered sacred and used in Hindu rituals."},
+    {"id": 100, "spotlight": "🌿 Kutki root is used for liver health in Ayurveda."},
+    {"id": 101, "spotlight": "🌿 Lantana leaves are used in folk medicine for skin ailments."},
+    {"id": 102, "spotlight": "🌿 Lemon balm tea is calming and helps relieve anxiety."},
+    {"id": 103, "spotlight": "🌿 Lemon grass is used in teas for its refreshing flavor and digestive benefits."},
+    {"id": 104, "spotlight": "🌿 Licorice root is used to soothe coughs and sore throats."},
+    {"id": 105, "spotlight": "🌿 Long pepper (Pippali) is used to boost metabolism and respiratory health."},
+    {"id": 106, "spotlight": "🌿 Lotus seeds are a nutritious snack and used in traditional medicine."},
+    {"id": 107, "spotlight": "🌿 Mace is the outer covering of nutmeg and is used for digestive health."},
+    {"id": 108, "spotlight": "🌿 Mango leaves are used in traditional remedies for diabetes."},
+    {"id": 109, "spotlight": "🌿 Marigold flowers are used for skin healing and as a natural dye."},
+    {"id": 110, "spotlight": "🌿 Marshmallow root is used to soothe sore throats and coughs."},
+    {"id": 111, "spotlight": "🌿 Mint leaves are used to freshen breath and aid digestion."},
+    {"id": 112, "spotlight": "🌿 Moringa oil is used for skin and hair care."},
+    {"id": 113, "spotlight": "🌿 Mugwort is used in teas for digestive and calming effects."},
+    {"id": 114, "spotlight": "🌿 Mulberry leaves are used to support blood sugar control."},
+    {"id": 115, "spotlight": "🌿 Mustard seeds are used in pickles and for their warming properties."},
+    {"id": 116, "spotlight": "🌿 Myrobalan fruit is used in Triphala for digestive health."},
+    {"id": 117, "spotlight": "🌿 Nettle leaves are rich in iron and used for anemia."},
+    {"id": 118, "spotlight": "🌿 Nutmeg is used to aid sleep and digestion."},
+    {"id": 119, "spotlight": "🌿 Olive leaves are used for their antioxidant and heart health benefits."},
+    {"id": 120, "spotlight": "🌿 Onion juice is used in folk remedies for hair growth."},
+    {"id": 121, "spotlight": "🌿 Orange peel is used in teas and for its vitamin C content."},
+    {"id": 122, "spotlight": "🌿 Oregano is used for its antimicrobial and digestive benefits."},
+    {"id": 123, "spotlight": "🌿 Palash flowers are used in Holi festival colors and for urinary health."},
+    {"id": 124, "spotlight": "🌿 Parsley is rich in vitamins and used as a breath freshener."},
+    {"id": 125, "spotlight": "🌿 Passionflower tea is used to promote relaxation and sleep."},
+    {"id": 126, "spotlight": "🌿 Patchouli oil is used in aromatherapy for its calming effects."},
+    {"id": 127, "spotlight": "🌿 Peepal tree leaves are used in Ayurveda for asthma and heart health."},
+    {"id": 128, "spotlight": "🌿 Pineapple juice is used in folk medicine for digestion."},
+    {"id": 129, "spotlight": "🌿 Plantain leaves are used for wound healing and skin care."},
+    {"id": 130, "spotlight": "🌿 Poppy seeds are used in sweets and for their calming effects."},
+    {"id": 131, "spotlight": "🌿 Pumpkin seeds are rich in zinc and support prostate health."},
+    {"id": 132, "spotlight": "🌿 Purslane is a wild green rich in omega-3 fatty acids."},
+    {"id": 133, "spotlight": "🌿 Quince fruit is used for digestive health and as a natural remedy for nausea."},
+    {"id": 134, "spotlight": "🌿 Radish leaves are used in traditional remedies for jaundice."},
+    {"id": 135, "spotlight": "🌿 Raisins are used to relieve constipation and boost iron levels."},
+    {"id": 136, "spotlight": "🌿 Raspberry leaves are used in teas for women's health."},
+    {"id": 137, "spotlight": "🌿 Red sandalwood is used for skin care and cooling effects."},
+    {"id": 138, "spotlight": "🌿 Rhubarb root is used as a gentle laxative in traditional medicine."},
+    {"id": 139, "spotlight": "🌿 Rosemary is used to improve memory and circulation."},
+    {"id": 140, "spotlight": "🌿 Safflower oil is used for heart health and skin care."},
+    {"id": 141, "spotlight": "🌿 Sage is used for sore throats and to improve memory."},
+    {"id": 142, "spotlight": "🌿 Sapodilla fruit is used for its soothing and cooling effects."},
+    {"id": 143, "spotlight": "🌿 Sesame seeds are rich in calcium and support bone health."},
+    {"id": 144, "spotlight": "🌿 Shikakai is used as a natural shampoo in India."},
+    {"id": 145, "spotlight": "🌿 Soapnut (Reetha) is used as a natural cleanser for hair and skin."},
+    {"id": 146, "spotlight": "🌿 Sorghum is a gluten-free grain used in traditional diets."},
+    {"id": 147, "spotlight": "🌿 Soybean is a source of plant-based protein and supports heart health."},
+    {"id": 148, "spotlight": "🌿 Spinach is rich in iron and supports eye health."},
+    {"id": 149, "spotlight": "🌿 Star anise is used for its licorice flavor and digestive benefits."},
+    {"id": 150, "spotlight": "🌿 Stevia leaves are used as a natural sweetener."},
+    {"id": 151, "spotlight": "🌿 Strawberry leaves are used in teas for digestive health."},
+    {"id": 152, "spotlight": "🌿 Sunflower seeds are rich in vitamin E and support skin health."},
+    {"id": 153, "spotlight": "🌿 Sweet flag (Vacha) is used for speech and memory in Ayurveda."},
+    {"id": 154, "spotlight": "🌿 Tamarind pulp is used for digestion and as a cooling summer drink."},
+    {"id": 155, "spotlight": "🌿 Tea tree oil is used for its antimicrobial and skin healing properties."},
+    {"id": 156, "spotlight": "🌿 Thyme is used for respiratory health and as a culinary herb."},
+    {"id": 157, "spotlight": "🌿 Tulsi tea is a popular herbal drink for stress relief."},
+    {"id": 158, "spotlight": "🌿 Turmeric milk is a traditional remedy for colds and coughs."},
+    {"id": 159, "spotlight": "🌿 Vanilla beans are used for flavor and as a mood enhancer."},
+    {"id": 160, "spotlight": "🌿 Walnut kernels are rich in omega-3 fatty acids and support brain health."},
+    {"id": 161, "spotlight": "🌿 Watermelon seeds are roasted and eaten as a snack in India."},
+    {"id": 162, "spotlight": "🌿 Wheatgrass juice is used for detoxification and boosting energy."},
+    {"id": 163, "spotlight": "🌿 White lotus is used for its calming and cooling effects."},
+    {"id": 164, "spotlight": "🌿 Wild yam is used for women's health and hormonal balance."},
+    {"id": 165, "spotlight": "🌿 Winter cherry (Ashwagandha) is used for stress relief and vitality."},
+    {"id": 166, "spotlight": "🌿 Wood apple pulp is used for digestive health and cooling drinks."},
+    {"id": 167, "spotlight": "🌿 Yarrow is used for wound healing and to reduce inflammation."},
+    {"id": 168, "spotlight": "🌿 Yellow dock root is used for liver and skin health."},
+    {"id": 169, "spotlight": "🌿 Zedoary root is used for digestive and anti-inflammatory benefits."},
+    {"id": 170, "spotlight": "🌿 Ziziphus fruit is used for relaxation and sleep support."},
+    {"id": 171, "spotlight": "🌿 Agave syrup is used as a natural sweetener in drinks and desserts."},
+    {"id": 172, "spotlight": "🌿 Alfalfa sprouts are rich in vitamins and minerals for overall health."},
+    {"id": 173, "spotlight": "🌿 Angelica root is used for digestive and respiratory health."},
+    {"id": 174, "spotlight": "🌿 Anise seeds are used for their licorice flavor and digestive benefits."},
+    {"id": 175, "spotlight": "🌿 Apple cider vinegar is used for digestion and as a natural tonic."},
+    {"id": 176, "spotlight": "🌿 Apricot kernels are used in traditional medicine for respiratory health."},
+    {"id": 177, "spotlight": "🌿 Arrowroot powder is used as a natural thickener and for digestive health."},
+    {"id": 178, "spotlight": "🌿 Artichoke leaves are used for liver and digestive health."},
+    {"id": 179, "spotlight": "🌿 Asparagus is rich in folate and supports kidney health."},
+    {"id": 180, "spotlight": "🌿 Avocado leaves are used in teas for digestive and respiratory benefits."},
+    {"id": 181, "spotlight": "🌿 Bamboo shoots are rich in fiber and used in Asian cuisine for digestive health."},
+    {"id": 182, "spotlight": "🌿 Barley grass is packed with antioxidants and supports detoxification."},
+    {"id": 183, "spotlight": "🌿 Bay leaves add flavor to dishes and are used for their anti-inflammatory properties."},
+    {"id": 184, "spotlight": "🌿 Beetroot juice is known to boost stamina and improve blood flow."},
+    {"id": 185, "spotlight": "🌿 Black cardamom is used for respiratory health and adds smoky flavor to curries."},
+    {"id": 186, "spotlight": "🌿 Black pepper aids digestion and enhances nutrient absorption."},
+    {"id": 187, "spotlight": "🌿 Blackberry leaves are used in teas for sore throats and mouth ulcers."},
+    {"id": 188, "spotlight": "🌿 Blueberries are rich in antioxidants and support brain health."},
+    {"id": 189, "spotlight": "🌿 Bottle gourd juice is a traditional remedy for cooling the body in summer."},
+    {"id": 190, "spotlight": "🌿 Breadfruit is a starchy fruit used as a staple food in tropical regions."},
+    {"id": 191, "spotlight": "🌿 Buckwheat is gluten-free and supports heart health."},
+    {"id": 192, "spotlight": "🌿 Burdock root is used for blood purification and skin health."},
+    {"id": 193, "spotlight": "🌿 Buttermilk is a probiotic drink that aids digestion in Indian cuisine."},
+    {"id": 194, "spotlight": "🌿 Cabbage leaves are used as poultices for joint pain and inflammation."},
+    {"id": 195, "spotlight": "🌿 Calendula flowers are used for skin healing and soothing rashes."},
+    {"id": 196, "spotlight": "🌿 Camphor is used in balms for its cooling and decongestant effects."},
+    {"id": 197, "spotlight": "🌿 Caraway seeds are used for digestive health and to relieve bloating."},
+    {"id": 198, "spotlight": "🌿 Carob powder is a caffeine-free chocolate substitute rich in fiber."},
+    {"id": 199, "spotlight": "🌿 Cashew leaves are used in folk medicine for oral health."},
+    {"id": 200, "spotlight": "🌿 Cassia bark is used as a spice and for its blood sugar-lowering effects."},
+    {"id": 201, "spotlight": "🌿 Castor oil is used as a natural laxative and for hair growth."},
+    {"id": 202, "spotlight": "🌿 Catnip tea is calming and used for digestive upsets."},
+    {"id": 203, "spotlight": "🌿 Cauliflower leaves are rich in calcium and used in soups."},
+    {"id": 204, "spotlight": "🌿 Celery seeds are used for joint health and as a diuretic."},
+    {"id": 205, "spotlight": "🌿 Chamomile flowers are used in teas for relaxation and sleep support."},
+    {"id": 206, "spotlight": "🌿 Chia seeds are high in omega-3 and support heart health."},
+    {"id": 207, "spotlight": "🌿 Chicory root is used as a coffee substitute and for liver health."},
+    {"id": 208, "spotlight": "🌿 Chives are rich in vitamin K and support bone health."},
+    {"id": 209, "spotlight": "🌿 Chrysanthemum tea is used in Asia for cooling and eye health."},
+    {"id": 210, "spotlight": "🌿 Cilantro is used for detoxification and as a culinary herb."},
+    {"id": 211, "spotlight": "🌿 Cinnamon basil is a unique variety used for its spicy aroma and flavor."},
+    {"id": 212, "spotlight": "🌿 Cloudberry is a rare fruit rich in vitamin C and antioxidants."},
+    {"id": 213, "spotlight": "🌿 Clover flowers are used in teas for their mild, sweet flavor."},
+    {"id": 214, "spotlight": "🌿 Coconut oil is used for skin, hair, and as a cooking oil."},
+    {"id": 215, "spotlight": "🌿 Coffee leaves are brewed as a mild, antioxidant-rich tea in some cultures."},
+    {"id": 216, "spotlight": "🌿 Collard greens are rich in fiber and support digestive health."},
+    {"id": 217, "spotlight": "🌿 Comfrey leaves are used externally for wound healing."},
+    {"id": 218, "spotlight": "🌿 Coriander leaves are used for their fresh flavor and digestive benefits."},
+    {"id": 219, "spotlight": "🌿 Cranberries are used to support urinary tract health."},
+    {"id": 220, "spotlight": "🌿 Cress is a peppery green used in salads and for its vitamin C content."},
+    {"id": 221, "spotlight": "🌿 Cumin seeds are used in curries and for digestive health."},
+    {"id": 222, "spotlight": "🌿 Curry leaf oil is used for hair growth and scalp health."},
+    {"id": 223, "spotlight": "🌿 Dandelion greens are used for liver detox and as a salad green."},
+    {"id": 224, "spotlight": "🌿 Date palm fruit is rich in energy and used in traditional sweets."},
+    {"id": 225, "spotlight": "🌿 Dill weed is used for its calming and digestive properties."},
+    {"id": 226, "spotlight": "🌿 Dragon fruit is high in antioxidants and supports immune health."},
+    {"id": 227, "spotlight": "🌿 Echinacea is used to boost immunity and fight colds."},
+    {"id": 228, "spotlight": "🌿 Elderberry syrup is a traditional remedy for colds and flu."},
+    {"id": 229, "spotlight": "🌿 Endive is a bitter green used for liver and digestive health."},
+    {"id": 230, "spotlight": "🌿 Fava beans are rich in protein and support heart health."},
+    {"id": 231, "spotlight": "🌿 Fennel bulb is used in salads and for its digestive benefits."},
+    {"id": 232, "spotlight": "🌿 Fig leaves are used in teas for diabetes management."},
+    {"id": 233, "spotlight": "🌿 Flax seeds are high in fiber and support heart health."},
+    {"id": 234, "spotlight": "🌿 Garlic chives are used for their mild garlic flavor and digestive benefits."},
+    {"id": 235, "spotlight": "🌿 Ginger lily is used in Ayurveda for respiratory health."},
+    {"id": 236, "spotlight": "🌿 Ginkgo biloba is used to support memory and cognitive function."},
+    {"id": 237, "spotlight": "🌿 Goji berries are rich in antioxidants and support eye health."},
+    {"id": 238, "spotlight": "🌿 Goldenseal root is used for immune and digestive health."},
+    {"id": 239, "spotlight": "🌿 Gooseberry leaves are used for their astringent and cooling effects."},
+    {"id": 240, "spotlight": "🌿 Grapefruit peel is used in teas for its vitamin C content."},
+    {"id": 241, "spotlight": "🌿 Green tea leaves are rich in antioxidants and support metabolism."},
+    {"id": 242, "spotlight": "🌿 Guarana seeds are used for energy and mental alertness."},
+    {"id": 243, "spotlight": "🌿 Hazelnut oil is used for skin care and as a salad dressing."},
+    {"id": 244, "spotlight": "🌿 Hemp seeds are a source of plant-based protein and omega-3."},
+    {"id": 245, "spotlight": "🌿 Hops flowers are used in beer and for their calming effects."},
+    {"id": 246, "spotlight": "🌿 Horseradish root is used for its pungent flavor and digestive benefits."},
+    {"id": 247, "spotlight": "🌿 Hyssop is used in teas for respiratory and digestive health."},
+    {"id": 248, "spotlight": "🌿 Jicama root is a crunchy, hydrating vegetable used in salads."},
+    {"id": 249, "spotlight": "🌿 Juniper berries are used for urinary tract health and as a spice."},
+    {"id": 250, "spotlight": "🌿 Kale is rich in vitamins A, C, and K and supports eye health."},
+    {"id": 251, "spotlight": "🌿 Kelp is a seaweed rich in iodine and supports thyroid health."},
+    {"id": 252, "spotlight": "🌿 Kiwi fruit is high in vitamin C and supports immune health."},
+    {"id": 253, "spotlight": "🌿 Kudzu root is used in traditional Chinese medicine for headaches."},
+    {"id": 254, "spotlight": "🌿 Lavender flowers are used for relaxation and sleep support."},
+    {"id": 255, "spotlight": "🌿 Leek is a mild-flavored vegetable used for heart health."},
+    {"id": 256, "spotlight": "🌿 Lemon verbena is used in teas for its calming and digestive effects."},
+    {"id": 257, "spotlight": "🌿 Lentils are a protein-rich legume used in soups and stews."},
+    {"id": 258, "spotlight": "🌿 Licorice fern root is used for coughs and sore throats."},
+    {"id": 259, "spotlight": "🌿 Linden flowers are used in teas for relaxation and sleep."},
+    {"id": 260, "spotlight": "🌿 Lotus root is used in Asian cuisine for its crunchy texture and health benefits."},
+    {"id": 261, "spotlight": "🌿 Lovage leaves are used for their celery-like flavor and digestive benefits."},
+    {"id": 262, "spotlight": "🌿 Maca root is used for energy and hormonal balance."},
+    {"id": 263, "spotlight": "🌿 Maitake mushrooms are used for immune support and as a culinary delicacy."},
+    {"id": 264, "spotlight": "🌿 Malabar spinach is a leafy green used in Indian curries and salads."},
+    {"id": 265, "spotlight": "🌿 Marsh marigold is used in folk medicine for its diuretic effects."},
+    {"id": 266, "spotlight": "🌿 Meadowsweet flowers are used for their mild pain-relieving properties."},
+    {"id": 267, "spotlight": "🌿 Milk thistle is used for liver detox and health support."},
+    {"id": 268, "spotlight": "🌿 Millet is a gluten-free grain used in traditional diets."},
+    {"id": 269, "spotlight": "🌿 Mint oil is used for its cooling and digestive benefits."},
+    {"id": 270, "spotlight": "🌿 Mistletoe is used in teas for immune and heart health."},
+    {"id": 271, "spotlight": "🌿 Mulberry fruit is rich in iron and supports blood health."},
+    {"id": 272, "spotlight": "🌿 Mustard greens are rich in vitamins and support eye health."},
+    {"id": 273, "spotlight": "🌿 Nasturtium leaves are peppery and used in salads for vitamin C."},
+    {"id": 274, "spotlight": "🌿 Noni fruit is used for immune support and energy."},
+    {"id": 275, "spotlight": "🌿 Nutmeg oil is used for its warming and pain-relieving effects."},
+    {"id": 276, "spotlight": "🌿 Oat straw is used in teas for calming and bone health."},
+    {"id": 277, "spotlight": "🌿 Okra is rich in fiber and supports digestive health."},
+    {"id": 278, "spotlight": "🌿 Olive oil is used for heart health and as a skin moisturizer."},
+    {"id": 279, "spotlight": "🌿 Onion skins are used in broths for their antioxidant content."},
+    {"id": 280, "spotlight": "🌿 Orange blossom water is used for relaxation and flavoring desserts."}
+  ],
+
+
+  "explore": {
+    "1": {"title": "Benefits of Ginger", "explore": "Ginger helps relieve nausea and aids digestion."},
+    "2": {"title": "Plants That Boost Immunity", "explore": "Tulsi and Amla are known to strengthen the immune system."},
+    "3": {"title": "Natural Remedies for Cold", "explore": "Tulsi tea and ginger can ease cold symptoms."},
+    "4": {"title": "Herbal Teas for Relaxation", "explore": "Chamomile tea helps you relax and sleep better."},
+    "5": {"title": "Healing Power of Turmeric", "explore": "Turmeric reduces inflammation and supports healing."},
+    "6": {"title": "Aloe Vera for Skin Health", "explore": "Aloe Vera soothes burns and hydrates the skin."},
+    "7": {"title": "Herbs for Better Digestion", "explore": "Fennel and mint can improve your digestion."},
+    "8": {"title": "Natural Ways to Boost Energy", "explore": "Moringa leaves are a natural energy booster."},
+    "9": {"title": "Plants for Healthy Hair", "explore": "Amla and hibiscus promote strong, shiny hair."},
+    "10": {"title": "Herbal Solutions for Stress", "explore": "Ashwagandha helps the body manage stress."},
+    "11": {"title": "Herbs for Better Sleep", "explore": "Valerian root tea can help you sleep well."},
+    "12": {"title": "Natural Pain Relief with Plants", "explore": "Willow bark is a natural pain reliever."},
+    "13": {"title": "Herbs for Women's Health", "explore": "Shatavari supports women's hormonal balance."},
+    "14": {"title": "Plants That Support Heart Health", "explore": "Garlic and arjuna are good for your heart."},
+    "15": {"title": "Herbal Remedies for Allergies", "explore": "Nettle tea can help reduce allergy symptoms."},
+    "16": {"title": "Herbs for Weight Management", "explore": "Green tea boosts metabolism and aids weight loss."},
+    "17": {"title": "Plants for Healthy Skin", "explore": "Neem and turmeric are great for clear skin."},
+    "18": {"title": "Herbs for Respiratory Health", "explore": "Tulsi and licorice support healthy breathing."},
+    "19": {"title": "Natural Detox with Plants", "explore": "Dandelion helps cleanse the liver."},
+    "20": {"title": "Herbs for Eye Health", "explore": "Amla and carrot support good vision."},
+    "21": {"title": "Plants for Healthy Aging", "explore": "Goji berries are known for anti-aging benefits."},
+    "22": {"title": "Herbs for Men's Health", "explore": "Ginseng supports men's vitality."},
+    "23": {"title": "Natural Remedies for Indigestion", "explore": "Ajwain seeds help relieve indigestion."},
+    "24": {"title": "Plants for Healthy Teeth", "explore": "Neem twigs are used for dental hygiene."},
+    "25": {"title": "Herbs for Menstrual Comfort", "explore": "Ginger tea can ease menstrual cramps."},
+    "26": {"title": "Plants for Healthy Nails", "explore": "Silica-rich horsetail supports nail strength."},
+    "27": {"title": "Herbs for Liver Health", "explore": "Milk thistle is known for liver protection."},
+    "28": {"title": "Plants for Healthy Lungs", "explore": "Mullein is used to support lung health."},
+    "29": {"title": "Herbs for Healthy Appetite", "explore": "Gentian root stimulates appetite."},
+    "30": {"title": "Plants for Healthy Blood", "explore": "Beetroot juice supports healthy blood."},
+    "41": {"title": "Herbs for Healthy Ears", "explore": "Garlic oil is used for ear discomfort."},
+    "42": {"title": "Plants for Healthy Joints", "explore": "Nettle is used for joint comfort."},
+    "43": {"title": "Herbs for Healthy Stomach", "explore": "Chamomile soothes the stomach lining."},
+    "44": {"title": "Plants for Healthy Mind", "explore": "Gotu kola is used for mental clarity."},
+    "45": {"title": "Herbs for Healthy Muscles", "explore": "Magnesium-rich spinach supports muscles."},
+    "46": {"title": "Plants for Healthy Heartbeat", "explore": "Hawthorn supports a steady heartbeat."},
+    "47": {"title": "Herbs for Healthy Urinary Tract", "explore": "Cranberry helps prevent UTIs."},
+    "48": {"title": "Plants for Healthy Circulation", "explore": "Ginkgo biloba improves circulation."},
+    "49": {"title": "Herbs for Healthy Metabolism", "explore": "Cinnamon helps boost metabolism."},
+    "50": {"title": "Plants for Healthy Vision", "explore": "Carrots are good for your eyesight."},
+    "51": {"title": "Herbs for Healthy Throat", "explore": "Sage tea soothes a sore throat."},
+    "52": {"title": "Plants for Healthy Gums", "explore": "Myrrh is used for gum health."},
+    "53": {"title": "Herbs for Healthy Skin Glow", "explore": "Saffron is used for glowing skin."},
+    "54": {"title": "Plants for Healthy Bones", "explore": "Moringa leaves are rich in calcium."},
+    "55": {"title": "Herbs for Healthy Memory", "explore": "Rosemary is believed to boost memory."},
+    "56": {"title": "Plants for Healthy Hair Growth", "explore": "Bhringraj oil promotes hair growth."},
+    "57": {"title": "Herbs for Healthy Digestion", "explore": "Peppermint tea aids digestion."},
+    "58": {"title": "Plants for Healthy Mood", "explore": "St. John's Wort is used for mood support."},
+    "59": {"title": "Herbs for Healthy Immune System", "explore": "Echinacea is used to boost immunity."},
+    "60": {"title": "Plants for Healthy Weight", "explore": "Garcinia is used for weight management."},
+    "61": {"title": "Herbs for Healthy Blood Flow", "explore": "Cayenne pepper supports blood flow."},
+    "62": {"title": "Plants for Healthy Hormones", "explore": "Maca root is used for hormone balance."},
+    "63": {"title": "Herbs for Healthy Nerves", "explore": "Oat straw is used for nerve health."},
+    "64": {"title": "Plants for Healthy Endurance", "explore": "Cordyceps mushrooms boost endurance."},
+    "65": {"title": "Herbs for Healthy Blood Vessels", "explore": "Horse chestnut supports veins."},
+    "66": {"title": "Plants for Healthy Spleen", "explore": "Dandelion root supports spleen health."},
+    "67": {"title": "Herbs for Healthy Pancreas", "explore": "Gymnema is used for pancreas support."},
+    "68": {"title": "Plants for Healthy Lymph", "explore": "Cleavers herb supports lymph flow."},
+    "69": {"title": "Herbs for Healthy Adrenals", "explore": "Licorice root supports adrenal glands."},
+    "70": {"title": "Plants for Healthy Bladder", "explore": "Corn silk is used for bladder health."},
+    "71": {"title": "Herbs for Healthy Senses", "explore": "Ginkgo is used for sensory health."},
+    "72": {"title": "Plants for Healthy Voice", "explore": "Slippery elm soothes the voice box."},
+    "73": {"title": "Herbs for Healthy Appetite", "explore": "Gentian root is used to stimulate appetite."},
+    "74": {"title": "Plants for Healthy Sleep", "explore": "Passionflower tea helps with sleep."},
+    "75": {"title": "Herbs for Healthy Detox", "explore": "Burdock root is used for detoxification."},
+    "76": {"title": "Plants for Healthy Mindset", "explore": "Holy basil is used for mental clarity."},
+    "77": {"title": "Herbs for Healthy Ears", "explore": "Mullein oil is used for ear comfort."},
+    "78": {"title": "Plants for Healthy Taste", "explore": "Mint leaves freshen the palate."},
+    "79": {"title": "Herbs for Healthy Smell", "explore": "Rose petals are used for aroma therapy."},
+    "80": {"title": "Plants for Healthy Touch", "explore": "Aloe gel soothes the skin on contact."},
+    "81": {"title": "Herbs for Healthy Growth", "explore": "Fenugreek is used to promote growth."},
+    "82": {"title": "Plants for Healthy Calm", "explore": "Lavender is used for its calming scent."},
+    "83": {"title": "Herbs for Healthy Focus", "explore": "Gotu kola is used for better focus."},
+    "84": {"title": "Plants for Healthy Immunity", "explore": "Giloy is used to boost immunity."},
+    "85": {"title": "Herbs for Healthy Hydration", "explore": "Cucumber keeps you hydrated."},
+    "86": {"title": "Plants for Healthy Cooling", "explore": "Coriander cools the body in summer."},
+    "87": {"title": "Herbs for Healthy Warmth", "explore": "Ginger provides natural warmth."},
+    "88": {"title": "Plants for Healthy Cleansing", "explore": "Lemon is used for body cleansing."},
+    "89": {"title": "Herbs for Healthy Sweetness", "explore": "Stevia is a natural sweetener."},
+    "90": {"title": "Plants for Healthy Bitterness", "explore": "Bitter gourd is valued for its bitterness."},
+    "91": {"title": "Herbs for Healthy Spices", "explore": "Cumin is a common healthy spice."},
+    "92": {"title": "Plants for Healthy Aroma", "explore": "Basil leaves add a fresh aroma."},
+    "93": {"title": "Herbs for Healthy Zest", "explore": "Orange peel adds zest to dishes."},
+    "94": {"title": "Plants for Healthy Fiber", "explore": "Psyllium husk is a fiber source."},
+    "95": {"title": "Herbs for Healthy Oils", "explore": "Olive oil is a healthy fat."},
+    "96": {"title": "Plants for Healthy Snacks", "explore": "Roasted chickpeas are a healthy snack."},
+    "97": {"title": "Herbs for Healthy Drinks", "explore": "Lemongrass is used in herbal drinks."},
+    "98": {"title": "Plants for Healthy Soups", "explore": "Spinach is great in healthy soups."},
+    "99": {"title": "Herbs for Healthy Salads", "explore": "Parsley is a salad favorite."},
+    "100": {"title": "Plants for Healthy Breakfast", "explore": "Oats make a healthy breakfast."},
+    "101": {"title": "Herbs for Healthy Blood", "explore": "Nettle is used to support healthy blood."},
+    "102": {"title": "Plants for Healthy Joints", "explore": "Turmeric helps keep joints flexible."},
+    "103": {"title": "Herbs for Healthy Skin", "explore": "Calendula soothes and heals the skin."},
+    "104": {"title": "Plants for Healthy Digestion", "explore": "Papaya aids in smooth digestion."},
+    "105": {"title": "Herbs for Healthy Bones", "explore": "Dandelion greens are rich in calcium."},
+    "106": {"title": "Plants for Healthy Immunity", "explore": "Elderberry is used to boost immunity."},
+    "107": {"title": "Herbs for Healthy Heart", "explore": "Hibiscus tea supports heart health."},
+    "108": {"title": "Plants for Healthy Mind", "explore": "Sage is used for mental clarity."},
+    "109": {"title": "Herbs for Healthy Lungs", "explore": "Thyme is used for lung support."},
+    "110": {"title": "Plants for Healthy Stomach", "explore": "Fennel seeds soothe the stomach."},
+    "111": {"title": "Herbs for Healthy Nerves", "explore": "Chamomile calms the nervous system."},
+    "112": {"title": "Plants for Healthy Muscles", "explore": "Bananas help prevent muscle cramps."},
+    "113": {"title": "Herbs for Healthy Appetite", "explore": "Peppermint tea can boost appetite."},
+    "114": {"title": "Plants for Healthy Weight", "explore": "Apple cider vinegar aids weight loss."},
+    "115": {"title": "Herbs for Healthy Blood Sugar", "explore": "Bitter melon helps control sugar."},
+    "116": {"title": "Plants for Healthy Sleep", "explore": "Lavender tea promotes restful sleep."},
+    "117": {"title": "Herbs for Healthy Mood", "explore": "Saffron is used to lift the mood."},
+    "118": {"title": "Plants for Healthy Energy", "explore": "Ginseng is a natural energy booster."},
+    "119": {"title": "Herbs for Healthy Hair", "explore": "Rosemary oil supports hair growth."},
+    "120": {"title": "Plants for Healthy Teeth", "explore": "Clove oil is used for toothaches."},
+    "121": {"title": "Herbs for Healthy Ears", "explore": "Basil oil is used for ear comfort."},
+    "122": {"title": "Plants for Healthy Eyes", "explore": "Blueberries support eye health."},
+    "123": {"title": "Herbs for Healthy Gums", "explore": "Tea tree oil is used for gum care."},
+    "124": {"title": "Plants for Healthy Nails", "explore": "Pumpkin seeds support nail health."},
+    "125": {"title": "Herbs for Healthy Circulation", "explore": "Cayenne pepper boosts circulation."},
+    "126": {"title": "Plants for Healthy Detox", "explore": "Parsley helps detox the body."},
+    "127": {"title": "Herbs for Healthy Hormones", "explore": "Chasteberry balances hormones."},
+    "128": {"title": "Plants for Healthy Spleen", "explore": "Beetroot supports spleen health."},
+    "129": {"title": "Herbs for Healthy Pancreas", "explore": "Fenugreek supports pancreas health."},
+    "130": {"title": "Plants for Healthy Lymph", "explore": "Red clover supports lymph flow."},
+    "131": {"title": "Herbs for Healthy Adrenals", "explore": "Ashwagandha supports adrenal glands."},
+    "132": {"title": "Plants for Healthy Bladder", "explore": "Uva ursi is used for bladder health."},
+    "133": {"title": "Herbs for Healthy Voice", "explore": "Licorice root soothes the voice."},
+    "134": {"title": "Plants for Healthy Taste", "explore": "Mint leaves freshen the mouth."},
+    "135": {"title": "Herbs for Healthy Smell", "explore": "Rose petals are used for fragrance."},
+    "136": {"title": "Plants for Healthy Touch", "explore": "Aloe gel soothes the skin instantly."},
+    "137": {"title": "Herbs for Healthy Growth", "explore": "Moringa is used to promote growth."},
+    "138": {"title": "Plants for Healthy Calm", "explore": "Chamomile is used for calmness."},
+    "139": {"title": "Herbs for Healthy Focus", "explore": "Ginkgo biloba is used for focus."},
+    "140": {"title": "Plants for Healthy Immunity", "explore": "Echinacea is used for immunity."}
+  },
+
+
+
+  "plants": {
+    "0": {
+      "name": "Aloe Vera",
+      "scientificName": "Aloe barbadensis Miller",
+      "family": "Asphodelaceae",
+      "partsUsed": "Leaves (gel and latex)",
+      "uses": [
+        "Soothes burns, sunburns, minor wounds, insect bites",
+        "Reduces psoriasis, acne, dermatitis symptoms",
+        "May aid digestion, ulcer healing, and inflammatory bowel conditions",
+        "Supports glycemic control and weight management by reducing fat accumulation"
+      ],
+      "howToUse": [
+        "Apply fresh inner gel directly to burns or wounds several times daily; leave exposed to air",
+        "Use aloe gel moisturizer for acne-prone or sensitive skin, 2–3 times per day",
+        "Drink aloe juice (1 cup liquid + 2 tbsp gel) in smoothies or diluted water for digestion",
+        "Consider glass of aloe gel 1–2x daily to help lower blood sugar; consult physician for dosage"
+      ],
+      "caution": [
+        "Allergic reactions (itching, rash) may occur—patch-test before use",
+        "Aloe latex is a stimulant laxative—can cause cramps, diarrhea; unsafe in high doses or long term",
+        "Latex may interact with digoxin, diuretics, anticoagulants—avoid during surgery or if on medication",
+        "Oral aloe may be unsafe for pregnant/breastfeeding women and children under 12",
+        "Non‑decolorized whole leaf extract is a possible carcinogen (IARC group 2B)"
+      ],
+      "foundIn": "Originally from North Africa; now grown worldwide in dry subtropical regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Aloe_vera",
+      "symptoms": ["Burns", "Sunburn", "Wounds", "Insect bites", "Psoriasis", "Acne", "Dermatitis", "Digestive issues", "Ulcers", "Inflammation", "Weight management", "Blood sugar"]
+    },
+    "1": {
+      "name": "Rasna",
+      "scientificName": "Alpinia galanga",
+      "family": "Zingiberaceae",
+      "partsUsed": "Rhizome",
+      "uses": [
+        "Reduces inflammation and pain (arthritis, rheumatism, headaches)",
+        "Treats coughs, sore throat, respiratory congestion",
+        "Improves digestion, relieves gas, stimulates appetite",
+        "Fights bacterial infections, may enhance male sexual health",
+        "Used to treat fever, menstrual cramps, skin inflammation"
+      ],
+      "howToUse": [
+        "Boil 2–3 slices of fresh rhizome in water to make tea; drink up to twice daily",
+        "Apply warm paste of crushed rhizome to joint pain or headaches twice daily",
+        "Add small piece of rhizome to curries/soups to support appetite and digestion",
+        "Use 500 mg extract daily has shown improvement in SSRI-induced ED over 4 weeks"
+      ],
+      "caution": [
+        "May interact with sedatives and anticoagulants—avoid before surgery",
+        "Insufficient safety data for pregnancy, nursing, or children under 2",
+        "High doses may cause gastrointestinal upset or heartburn"
+      ],
+      "foundIn": "Native to Southeast Asia (Indonesia, Thailand); widely cultivated in India",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alpinia_galanga",
+      "symptoms": ["Arthritis", "Rheumatism", "Headaches", "Cough", "Sore throat", "Respiratory congestion", "Digestive issues", "Gas", "Appetite loss", "Fever", "Menstrual cramps", "Skin inflammation"]
+    },
+    "2": {
+      "name": "Arive‑Dantu",
+      "scientificName": "Amaranthus viridis",
+      "family": "Amaranthaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Anti‑inflammatory and analgesic for wounds & swelling",
+        "Rich in iron, calcium, vitamins—tonic and nutritive",
+        "Helps soothe skin irritations and minor burns",
+        "Used traditionally to heal cuts and reduce bleeding"
+      ],
+      "howToUse": [
+        "Cook as a leafy green vegetable; consume daily for nutritional boost",
+        "Crush fresh leaves into a poultice and apply on wounds for 30 min",
+        "Blend leaves into shawls/decoction, strain, and drink for anti‑inflammatory effect"
+      ],
+      "caution": [
+        "Contains oxalates—excess may contribute to kidney stones",
+        "Not recommended for thyroid patients without medical advice",
+        "Wash thoroughly; wild-harvested amaranth can carry pesticides"
+      ],
+      "foundIn": "Common weed across tropical Asia and Africa",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Amaranthus_viridis",
+      "symptoms": ["Wounds", "Swelling", "Iron deficiency", "Calcium deficiency", "Skin irritation", "Burns", "Cuts", "Bleeding"]
+    },
+    "3": {
+      "name": "Palm Tree",
+      "scientificName": "Arecaceae",
+      "family": "Arecaceae",
+      "partsUsed": "Fruit, sap, leaves, wood",
+      "uses": [
+        "Date and coconut fruits for nutrition",
+        "Sap used to make jaggery, sugar, and drinking beverages",
+        "Leaves for shelter, weaving, roofing materials",
+        "Oil used in cooking, cosmetics, and for cosmic/ritual purposes"
+      ],
+      "howToUse": [
+        "Eat fresh or processed fruit (coconut flesh, water, dates) as daily food",
+        "Boil palm sap and reduce to make palm sugar or jaggery",
+        "Use young leaves to weave baskets, mats, roofing",
+        "Tap and ferment sap to make traditional palm wine (caution: alcohol)"
+      ],
+      "caution": [
+        "Unsterile sap fermentation can cause spoilage or intoxication",
+        "Palm oil is high in saturated fats—use in moderation",
+        "Sap/tapped trunk wounds should be cleaned to avoid infection"
+      ],
+      "foundIn": "Widely across tropical and subtropical areas globally",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Arecaceae",
+      "symptoms": ["Nutrition", "Dehydration", "Sugar craving", "Shelter needs", "Cosmetic use"]
+    },
+    "4": {
+      "name": "Jackfruit",
+      "scientificName": "Artocarpus heterophyllus",
+      "family": "Moraceae",
+      "partsUsed": "Fruit, seeds, leaves, latex",
+      "uses": [
+        "Fruit rich in vitamins and fiber strengthens immunity & digestion",
+        "Seeds are nutritious and promote digestive health",
+        "Leaf decoctions traditionally used in diabetes management",
+        "Latex applied to minor cuts as adhesive and antiseptic"
+      ],
+      "howToUse": [
+        "Eat ripe fruit raw or cooked in curries/stews for nutrition",
+        "Boil seeds, remove skin, eat or grind into flour",
+        "Boil leaves to make a decoction—drink 1 cup daily for sugar control",
+        "Apply a small amount of clean latex to minor cuts; rinse after 10 min"
+      ],
+      "caution": [
+        "Latex can cause skin irritation—test on small patch before use",
+        "Unripe fruit latex is sticky—may cause digestive upset if not cooked",
+        "May interfere with diabetes medications—monitor sugar levels"
+      ],
+      "foundIn": "Native to Western Ghats (India); cultivated across tropical Asia",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jackfruit",
+      "symptoms": ["Immunity", "Digestion", "Diabetes", "Minor cuts", "Adhesive needs"]
+    },
+    "5": {
+      "name": "Neem",
+      "scientificName": "Azadirachta indica",
+      "family": "Meliaceae",
+      "partsUsed": "Leaves, bark, seeds, oil",
+      "uses": [
+        "Antimicrobial: fights bacteria, viruses, fungi",
+        "Anti-inflammatory: relieves skin conditions like eczema, psoriasis",
+        "Supports oral health: used in toothpaste, mouthwash",
+        "May help lower blood sugar and cholesterol",
+        "Used for insect repellent and wound healing"
+      ],
+      "howToUse": [
+        "Apply neem leaf paste or oil topically on acne, eczema, psoriasis areas",
+        "Use neem oil in shampoo to treat dandruff and scalp irritation",
+        "Chew a neem twig or use neem toothpaste for oral hygiene",
+        "Drink neem tea (made from 3–5 dried leaves) to support blood sugar",
+        "Apply diluted neem oil (10%) on skin for insect repellent"
+      ],
+      "caution": [
+        "Large doses can cause nausea, vomiting, or liver damage",
+        "Unsafe during pregnancy and breastfeeding—may affect hormones",
+        "Apply oil diluted—pure oil may irritate skin",
+        "Avoid long-term ingestion—can cause toxicity"
+      ],
+      "foundIn": "Native to Indian subcontinent, now widespread in tropical regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Azadirachta_indica",
+      "symptoms": ["Bacterial infection", "Viral infection", "Fungal infection", "Eczema", "Psoriasis", "Oral health", "Blood sugar", "Cholesterol", "Insect bites", "Wound healing"]
+    },
+    "6": {
+      "name": "Brahmi",
+      "scientificName": "Bacopa monnieri",
+      "family": "Plantaginaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Enhances memory, cognition, and focus",
+        "Reduces anxiety and stress",
+        "Helps soothe stomach ulcers and aid digestion",
+        "Has antioxidant and anti-inflammatory properties"
+      ],
+      "howToUse": [
+        "Take 300–450 mg standardized extract daily for memory support",
+        "Use as herbal tea: steep 1 tsp dried leaves in hot water, drink 1–2 cups/day",
+        "Apply crushed leaves topically to minor burns or skin irritation",
+        "Consider combination with ashwagandha for improved stress relief"
+      ],
+      "caution": [
+        "Topical use may cause mild skin tingling or redness in sensitive people",
+        "Internal use not well-studied—use moderate doses only",
+        "Avoid long-term internal use without professional guidance"
+      ],
+      "foundIn": "Wetlands and marshy areas in India, Southeast Asia, Australia",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Bacopa_monnieri",
+      "symptoms": ["Memory loss", "Cognitive decline", "Anxiety", "Stress", "Stomach ulcers", "Digestive issues", "Inflammation"]
+    },
+    "7": {
+      "name": "Mullugoranta",
+      "scientificName": "Barleria cristata",
+      "family": "Acanthaceae",
+      "partsUsed": "Leaves, flowers, roots",
+      "uses": [
+        "Soothes skin irritations: eczema, rashes, insect bites",
+        "Anti-inflammatory and analgesic for joint pain and swelling",
+        "Traditionally used to treat cough, cold, and throat infections",
+        "May support wound healing and reduce scars"
+      ],
+      "howToUse": [
+        "Make a paste from crushed leaves and apply to irritated skin",
+        "Boil leaves in water to use as a gargle for sore throat",
+        "Apply leaf juice to minor cuts or insect bites twice daily",
+        "Take decoction of flowers for cough relief (1 cup, twice daily)"
+      ],
+      "caution": [
+        "High oxalate content—may contribute to kidney stones in susceptible individuals",
+        "Wash thoroughly to avoid contaminants from home gardens or wild growth",
+        "Large consumption may temporarily discolor urine due to plant pigments"
+      ],
+      "foundIn": "Southern India and Southeast Asia in open fields and gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Barleria_cristata",
+      "symptoms": ["Eczema", "Rashes", "Insect bites", "Joint pain", "Swelling", "Cough", "Cold", "Throat infection", "Wound healing", "Scars"]
+    },
+    "8": {
+      "name": "Indian Spinach",
+      "scientificName": "Basella alba",
+      "family": "Basellaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Rich in iron, calcium, vitamins A & C—supports nutrition and immunity",
+        "Aids digestion and smooth bowel movements due to fiber content",
+        "Anti-inflammatory and antioxidant properties support skin health",
+        "Used traditionally for urinary and respiratory tract support"
+      ],
+      "howToUse": [
+        "Cook fresh leaves in curries or soups as a nutrient-rich vegetable",
+        "Blend raw leaves in smoothies or fresh juices with water",
+        "Use leaf extract as soothing eyewash for mild irritation",
+        "Apply poultice of cooked leaves to minor skin inflammations"
+      ],
+      "caution": [
+        "Mustard oil may cause skin irritation—patch test before use",
+        "Internal consumption in large quantities may cause gastrointestinal upset",
+        "Avoid in thyroid dysfunction without medical advice—contains goitrogens"
+      ],
+      "foundIn": "Native to tropical Asia and Africa, grown widely in home gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Basella_alba",
+      "symptoms": ["Iron deficiency", "Calcium deficiency", "Vitamin deficiency", "Immunity", "Digestion", "Constipation", "Skin health", "Urinary issues", "Respiratory issues"]
+    },
+    "9": {
+      "name": "Indian Mustard",
+      "scientificName": "Brassica juncea",
+      "family": "Brassicaceae",
+      "partsUsed": "Leaves, seeds, oil",
+      "uses": [
+        "Anti-inflammatory: helps relieve muscle and joint pain",
+        "Improves digestion and appetite",
+        "Used as emetic, expectorant for cough and bronchitis",
+        "Rich in vitamins A, C, and minerals preventing deficiency"
+      ],
+      "howToUse": [
+        "Apply warm mustard seed poultice for chest congestion or sore muscles",
+        "Cook leaves as leafy greens in curries or sautéed dishes",
+        "Use mustard oil as massage oil to relieve muscle stiffness",
+        "Add seeds to condiments or teas for digestive support"
+      ],
+      "caution": [
+        "Avoid unripe papaya during pregnancy—it may cause uterine contractions",
+        "Overuse of papaya seeds can lead to digestive upset and reproductive issues",
+        "Allergic reactions possible in latex-sensitive individuals"
+      ],
+      "foundIn": "Cultivated across India, South Asia, and Mediterranean regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Brassica_juncea",
+      "symptoms": ["Muscle pain", "Joint pain", "Digestion", "Appetite loss", "Cough", "Bronchitis", "Vitamin deficiency"]
+    },
+    "10": {
+      "name": "Papaya",
+      "scientificName": "Carica papaya",
+      "family": "Caricaceae",
+      "partsUsed": "Fruits, leaves, seeds, latex",
+      "uses": [
+        "Digestive aid due to papain enzyme",
+        "Supports liver detox and blood platelet count (especially during dengue)",
+        "Anti-parasitic and anti-inflammatory properties",
+        "Used for wound healing and menstrual pain relief"
+      ],
+      "howToUse": [
+        "Eat ripe papaya to aid digestion and relieve constipation",
+        "Boil 2–3 papaya leaves and drink the extract for dengue recovery (under guidance)",
+        "Apply crushed papaya pulp topically for skin glow and wound healing",
+        "Consume dried seeds (1 tsp/day) for parasite control"
+      ],
+      "caution": [
+        "Unripe fruit may cause throat irritation in some people",
+        "Large root doses can be toxic—use only under medical supervision",
+        "Avoid during pregnancy due to lack of safety data"
+      ],
+      "foundIn": "Widely cultivated in tropical and subtropical regions worldwide",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Papaya",
+      "symptoms": ["Digestive issues", "Liver detox", "Low platelets", "Parasitic infection", "Inflammation", "Wound healing", "Menstrual pain"]
+    },
+    "11": {
+      "name": "Karanda",
+      "scientificName": "Carissa carandas",
+      "family": "Apocynaceae",
+      "partsUsed": "Fruits, leaves, roots",
+      "uses": [
+        "Fruits are rich in vitamin C—boosts immunity",
+        "Used for anemia, liver problems, and diarrhea",
+        "Root extract used for scabies and itching",
+        "Traditional remedy for earaches and fevers"
+      ],
+      "howToUse": [
+        "Consume ripe fruit raw or as pickles to support digestion and vitamin intake",
+        "Apply leaf paste to skin for boils and rashes",
+        "Boil roots and use decoction for skin problems or minor infections",
+        "Crushed leaves can be used in earache as ear drops (under guidance)"
+      ],
+      "caution": [
+        "Large doses can cause nausea, vomiting, or liver damage",
+        "Unsafe during pregnancy and breastfeeding—may affect hormones",
+        "Apply oil diluted—pure oil may irritate skin",
+        "Avoid long-term ingestion—can cause toxicity"
+      ],
+      "foundIn": "Native to India and Southeast Asia, found in dry and scrub forests",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Carissa_carandas",
+      "symptoms": ["Vitamin C deficiency", "Immunity", "Anemia", "Liver problems", "Diarrhea", "Scabies", "Itching", "Earache", "Fever"]
+    },
+    "12": {
+      "name": "Lemon",
+      "scientificName": "Citrus limon",
+      "family": "Rutaceae",
+      "partsUsed": "Fruits, peels, leaves",
+      "uses": [
+        "Boosts immunity due to high vitamin C content",
+        "Aids digestion and detoxification",
+        "Effective against cold, sore throat, and scurvy",
+        "Used in skincare for brightening and acne control"
+      ],
+      "howToUse": [
+        "Drink warm lemon water in the morning to detox and boost metabolism",
+        "Apply lemon juice with honey to the face to reduce dark spots and acne",
+        "Use lemon juice in herbal teas for throat relief",
+        "Dry the peel, powder it, and use as a natural scrub or digestive agent"
+      ],
+      "caution": [
+        "Direct lemon juice may irritate sensitive skin—always dilute",
+        "Excessive lemon intake can erode tooth enamel",
+        "People with citrus allergy should avoid it"
+      ],
+      "foundIn": "Cultivated in tropical and subtropical regions worldwide",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Lemon",
+      "symptoms": ["Immunity", "Cold", "Sore throat", "Scurvy", "Digestion", "Detox", "Skin brightening", "Acne"]
+    },
+    "13": {
+      "name": "Turmeric",
+      "scientificName": "Curcuma longa",
+      "family": "Zingiberaceae",
+      "partsUsed": "Rhizome (root)",
+      "uses": [
+        "Powerful anti-inflammatory and antioxidant",
+        "Used to boost immunity, aid wound healing, and improve skin health",
+        "Supports liver function and reduces joint pain",
+        "Used in respiratory issues like cold and asthma"
+      ],
+      "howToUse": [
+        "Consume golden milk (turmeric + milk + pepper) to reduce inflammation",
+        "Apply turmeric paste to wounds, cuts, or acne spots",
+        "Use turmeric with honey for sore throat or cough",
+        "Add 1 tsp turmeric powder to meals to support digestion and immunity"
+      ],
+      "caution": [
+        "High doses may cause stomach upset or ulcers",
+        "Avoid during gallbladder issues or on blood thinners",
+        "Can cause staining of skin and clothes—use cautiously"
+      ],
+      "foundIn": "Cultivated widely across India and Southeast Asia",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Turmeric",
+      "symptoms": ["Inflammation", "Immunity", "Wound healing", "Skin health", "Liver function", "Joint pain", "Cold", "Asthma"]
+    },
+    "14": {
+      "name": "Lemon Grass",
+      "scientificName": "Cymbopogon flexuosus",
+      "family": "Poaceae",
+      "partsUsed": "Leaves, stalks, essential oil",
+      "uses": [
+        "Relieves stress, anxiety, and promotes sleep",
+        "Effective against fever and digestive issues",
+        "Used for skin infections and as mosquito repellent",
+        "Supports detox and respiratory health"
+      ],
+      "howToUse": [
+        "Prepare lemongrass tea by boiling leaves for stress and digestive relief",
+        "Use lemongrass essential oil in a diffuser for relaxation",
+        "Crush leaves and rub on skin as natural insect repellent",
+        "Apply diluted oil to fungal infections or sore muscles"
+      ],
+      "caution": [
+        "May cause allergic reactions in sensitive individuals",
+        "Avoid unripe fruit if you have weak digestion",
+        "Pregnant and lactating women should consult a physician before use"
+      ],
+      "foundIn": "Native to India and Sri Lanka, cultivated globally",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cymbopogon",
+      "symptoms": ["Stress", "Anxiety", "Sleep issues", "Fever", "Digestive issues", "Skin infection", "Mosquito bites", "Detox", "Respiratory issues"]
+    },
+    "15": {
+      "name": "Roxburgh Fig",
+      "scientificName": "Ficus auriculata",
+      "family": "Moraceae",
+      "partsUsed": "Fruits, leaves, bark, roots",
+      "uses": [
+        "Fruits are used as a natural coolant and digestive aid",
+        "Helps in treating ulcers and wounds due to anti-inflammatory properties",
+        "Leaves are used to manage diabetes and high cholesterol",
+        "Bark extract is traditionally used for diarrhea and dysentery"
+      ],
+      "howToUse": [
+        "Consume ripe fruits directly or as juice for digestion and body cooling",
+        "Make a decoction of the bark and drink it to relieve diarrhea (under supervision)",
+        "Crush fresh leaves and use as a poultice on wounds",
+        "Dry and powder roots to be mixed in warm water for internal inflammation"
+      ],
+      "caution": [
+        "Not suitable for pregnant women without expert supervision",
+        "Excessive use of bark may lead to gastric discomfort",
+        "Avoid prolonged use of raw leaf extracts"
+      ],
+      "foundIn": "Himalayan regions, Northeastern India, Nepal, Bhutan",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ficus_auriculata",
+      "symptoms": ["Digestive issues", "Body cooling", "Ulcers", "Wounds", "Diabetes", "High cholesterol", "Diarrhea", "Dysentery"]
+    },
+    "16": {
+      "name": "Peepal Tree",
+      "scientificName": "Ficus religiosa",
+      "family": "Moraceae",
+      "partsUsed": "Leaves, bark, fruit, roots",
+      "uses": [
+        "Used in respiratory disorders such as asthma and cough",
+        "Known for its anti-diabetic and antibacterial effects",
+        "Used in treatment of skin diseases and ulcers",
+        "Has religious and spiritual significance with calming effect on the mind"
+      ],
+      "howToUse": [
+        "Boil leaves and inhale steam for relief in asthma and cough",
+        "Make leaf juice and consume in small quantities for managing blood sugar",
+        "Apply paste of bark on wounds and boils for faster healing",
+        "Drink bark decoction to treat internal ulcers or diarrhea"
+      ],
+      "caution": [
+        "May lower blood pressure—monitor if already on medication",
+        "Avoid overuse during pregnancy due to its emmenagogue effects",
+        "Some individuals may develop skin rashes from flower extracts"
+      ],
+      "foundIn": "Throughout the Indian subcontinent, especially in temples and urban spaces",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ficus_religiosa",
+      "symptoms": ["Asthma", "Cough", "Diabetes", "Bacterial infection", "Skin disease", "Ulcers", "Anxiety", "Diarrhea"]
+    },
+    "17": {
+      "name": "Hibiscus",
+      "scientificName": "Hibiscus rosa-sinensis",
+      "family": "Malvaceae",
+      "partsUsed": "Flowers, leaves, roots",
+      "uses": [
+        "Promotes hair growth and prevents dandruff",
+        "Regulates menstruation and supports reproductive health",
+        "Used as a mild laxative and for fever reduction",
+        "Improves skin glow and reduces acne"
+      ],
+      "howToUse": [
+        "Make a paste of flowers and apply to scalp to boost hair growth",
+        "Boil hibiscus petals to make herbal tea for menstrual regulation",
+        "Use leaf paste on the face for acne control and glow",
+        "Crushed flower juice can be applied to minor burns and wounds"
+      ],
+      "caution": [
+        "Excessive inhalation of jasmine scent may cause headache in some individuals",
+        "Essential oil should be diluted before skin application",
+        "Avoid use during early pregnancy without guidance"
+      ],
+      "foundIn": "Cultivated in tropical and subtropical regions, common in Indian homes",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Hibiscus_rosa-sinensis",
+      "symptoms": ["Hair loss", "Dandruff", "Menstrual issues", "Fever", "Constipation", "Skin glow", "Acne", "Burns", "Wounds"]
+    },
+    "18": {
+      "name": "Jasmine",
+      "scientificName": "Jasminum spp.",
+      "family": "Oleaceae",
+      "partsUsed": "Flowers, leaves, root",
+      "uses": [
+        "Soothes anxiety and promotes sleep",
+        "Used in skin care for moisturizing and fragrance",
+        "Anti-inflammatory and antimicrobial—helps in wound care",
+        "Root extract used for relieving headaches and joint pain"
+      ],
+      "howToUse": [
+        "Use jasmine-infused oil for massage to reduce anxiety and improve sleep",
+        "Apply flower paste to skin for softness and brightness",
+        "Make tea using jasmine flowers for stress relief and digestion",
+        "Boil roots and use warm decoction for body pain relief (external use)"
+      ],
+      "caution": [
+        "Excessive intake may cause constipation",
+        "Seed powder dosage must be monitored for diabetic patients under medication",
+        "May lower blood sugar — not advised before surgery"
+      ],
+      "foundIn": "Common in gardens across India and Asia; various cultivars exist",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Jasmine",
+      "symptoms": ["Anxiety", "Sleep issues", "Skin dryness", "Wound care", "Headache", "Joint pain", "Constipation", "Diabetes"]
+    },
+    "19": {
+      "name": "Patharchatta",
+      "scientificName": "Kalanchoe pinnata",
+      "family": "Crassulaceae",
+      "partsUsed": "Leaves, juice",
+      "uses": [
+        "Dissolves kidney stones and supports urinary health",
+        "Used in wound healing and skin infections",
+        "Acts as a cough suppressant and anti-inflammatory",
+        "Traditionally used for treating piles and gastric ulcers"
+      ],
+      "howToUse": [
+        "Crush fresh leaves and consume 1–2 tsp juice on empty stomach for kidney stones",
+        "Apply leaf paste on cuts, boils, and skin irritation",
+        "Boil leaves and drink decoction for cold, cough, and sore throat",
+        "Mix leaf juice with honey for gastritis or ulcers"
+      ],
+      "caution": [
+        "Excessive intake may cause constipation or low blood sugar",
+        "Avoid in pregnancy unless prescribed",
+        "Prolonged unsupervised use may affect liver enzymes"
+      ],
+      "foundIn": "Widely naturalized in tropical Asia, Africa, and Caribbean regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Kalanchoe_pinnata",
+      "symptoms": ["Kidney stones", "Urinary issues", "Wound healing", "Skin infection", "Cough", "Inflammation", "Piles", "Gastric ulcers"]
+    },
+    "20": {
+      "name": "Mango",
+      "scientificName": "Mangifera indica",
+      "family": "Anacardiaceae",
+      "partsUsed": "Leaves, bark, fruit, seeds",
+      "uses": [
+        "Improves digestion and fights acidity",
+        "Controls diabetes and lowers blood sugar levels (leaves)",
+        "Rich in antioxidants and supports eye health",
+        "Used to treat diarrhea and respiratory problems"
+      ],
+      "howToUse": [
+        "Boil 10 tender mango leaves in water, let it cool, drink in the morning to help manage blood sugar",
+        "Consume ripe fruit for its laxative and cooling effects",
+        "Grind mango seed powder and take it with honey for diarrhea",
+        "Use bark decoction to treat inflammation of gums (as mouth rinse)"
+      ],
+      "caution": [
+        "Unripe mangoes in excess can cause throat irritation or stomach upset",
+        "Mango sap may cause allergic reactions or skin burns",
+        "Diabetics should monitor glucose levels if using mango therapeutically"
+      ],
+      "foundIn": "Widely cultivated in tropical regions, especially in India",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mango",
+      "symptoms": ["Digestion", "Acidity", "Diabetes", "Low blood sugar", "Antioxidant needs", "Eye health", "Diarrhea", "Respiratory problems"]
+    },
+    "21": {
+      "name": "Mint",
+      "scientificName": "Mentha spicata",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, stems, essential oil",
+      "uses": [
+        "Aids digestion and relieves gas and bloating",
+        "Freshens breath and used for oral hygiene",
+        "Treats nausea, headaches, and skin irritation",
+        "Used for respiratory relief (asthma, colds)"
+      ],
+      "howToUse": [
+        "Drink mint tea or chew fresh leaves for digestive relief",
+        "Crush leaves and inhale aroma to ease headaches or nausea",
+        "Mix mint paste with rose water and apply to skin for acne or itching",
+        "Use mint leaves in steam inhalation for sinus relief"
+      ],
+      "caution": [
+        "Excess consumption may cause acid reflux in sensitive individuals",
+        "Avoid giving strong mint oil to infants or toddlers",
+        "May interact with medications—consult your doctor if on long-term treatment"
+      ],
+      "foundIn": "Widely cultivated and naturalized across India and the Mediterranean",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mentha_spicata",
+      "symptoms": ["Digestion", "Gas", "Bloating", "Bad breath", "Nausea", "Headache", "Skin irritation", "Respiratory relief", "Asthma", "Colds"]
+    },
+    "22": {
+      "name": "Drumstick Tree",
+      "scientificName": "Moringa oleifera",
+      "family": "Moringaceae",
+      "partsUsed": "Leaves, pods, seeds, bark, roots",
+      "uses": [
+        "Boosts immunity and energy levels",
+        "Rich in vitamins A, C, and calcium",
+        "Controls blood sugar and cholesterol",
+        "Supports lactation and treats inflammation"
+      ],
+      "howToUse": [
+        "Cook leaves like spinach or make juice to strengthen immunity",
+        "Add drumstick pods to curries for digestion and detox",
+        "Dry and powder leaves—consume 1 tsp daily in warm water",
+        "Apply leaf paste to wounds or inflamed areas for relief"
+      ],
+      "caution": [
+        "Avoid overuse of bark and leaf decoctions due to limited research",
+        "Not advisable during pregnancy without consultation",
+        "May cause mild drowsiness—avoid before driving"
+      ],
+      "foundIn": "Native to India and cultivated in tropical/subtropical regions globally",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Moringa_oleifera",
+      "symptoms": ["Immunity", "Low energy", "Vitamin deficiency", "Calcium deficiency", "Blood sugar", "Cholesterol", "Lactation", "Inflammation"]
+    },
+    "23": {
+      "name": "Jamaica Cherry",
+      "scientificName": "Muntingia calabura",
+      "family": "Muntingiaceae",
+      "partsUsed": "Fruits, leaves, bark",
+      "uses": [
+        "Antioxidant-rich fruits for general wellness",
+        "Leaf extracts used to reduce blood sugar levels",
+        "Anti-inflammatory and antimicrobial properties",
+        "Used to relieve headaches and abdominal cramps"
+      ],
+      "howToUse": [
+        "Eat ripe fruit raw for antioxidant and energy benefits",
+        "Boil leaves in water and drink as a tea for blood sugar support",
+        "Apply leaf paste to wounds or skin infections",
+        "Consume bark decoction to alleviate mild pain or cramps"
+      ],
+      "caution": [
+        "Excessive intake may cause constipation or low blood sugar",
+        "Avoid in pregnancy unless prescribed",
+        "May lower blood glucose levels—monitor if diabetic"
+      ],
+      "foundIn": "Tropical Asia, Central America, commonly seen in roadsides and gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Muntingia_calabura",
+      "symptoms": ["Wellness", "Blood sugar", "Inflammation", "Headache", "Abdominal cramps"]
+    },
+    "24": {
+      "name": "Curry Leaf",
+      "scientificName": "Murraya koenigii",
+      "family": "Rutaceae",
+      "partsUsed": "Leaves, roots, bark",
+      "uses": [
+        "Improves digestion and relieves diarrhea",
+        "Controls blood sugar levels and cholesterol",
+        "Promotes hair growth and reduces premature greying",
+        "Has antibacterial and antioxidant properties"
+      ],
+      "howToUse": [
+        "Chew 5–10 raw curry leaves in the morning for metabolism and sugar control",
+        "Boil leaves and drink water for indigestion or nausea",
+        "Make hair oil with curry leaves to strengthen roots and prevent greying",
+        "Use root decoction for mild body pain and fever"
+      ],
+      "caution": [
+        "May lower blood pressure—monitor if already on medication",
+        "Avoid overuse during pregnancy due to its emmenagogue effects",
+        "Some individuals may develop skin rashes from flower extracts"
+      ],
+      "foundIn": "Native to India and Sri Lanka; grown in home gardens and farms",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Murraya_koenigii",
+      "symptoms": ["Digestion", "Diarrhea", "Blood sugar", "Cholesterol", "Hair loss", "Premature greying", "Bacterial infection", "Antioxidant needs", "Fever"]
+    },
+    "25": {
+      "name": "Oleander",
+      "scientificName": "Nerium oleander",
+      "family": "Apocynaceae",
+      "partsUsed": "Leaves, flowers, bark (with extreme caution)",
+      "uses": [
+        "Traditionally used for skin conditions like eczema and ulcers",
+        "Employed in small, controlled doses for heart conditions in traditional systems",
+        "Flowers sometimes used externally for soothing irritated skin"
+      ],
+      "howToUse": [
+        "Paste of flowers applied externally to skin ailments like rashes and eczema",
+        "Very dilute leaf decoctions used externally in folk medicine for joint pain",
+        "Boiled bark water is sometimes used to clean wounds (not recommended without expert guidance)"
+      ],
+      "caution": [
+        "All parts of the plant are **highly toxic** if ingested — contains cardiac glycosides",
+        "Never use internally without expert supervision",
+        "Keep away from children and pets — even a small dose can be fatal",
+        "Avoid inhaling smoke from burning oleander"
+      ],
+      "foundIn": "Commonly grown as an ornamental shrub across tropical and subtropical regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Nerium",
+      "symptoms": ["Eczema", "Ulcers", "Heart conditions", "Skin irritation"]
+    },
+    "26": {
+      "name": "Night-flowering Jasmine (Parijata)",
+      "scientificName": "Nyctanthes arbor-tristis",
+      "family": "Oleaceae",
+      "partsUsed": "Leaves, flowers, bark, seeds",
+      "uses": [
+        "Reduces fever and treats chronic fevers like malaria",
+        "Useful in arthritis, sciatica, and joint pain due to anti-inflammatory properties",
+        "Helps in treating constipation and worm infestation",
+        "Flowers used for hair and skincare"
+      ],
+      "howToUse": [
+        "Boil leaves to make a decoction for fever or rheumatic pain relief",
+        "Leaf juice taken with honey for treating intestinal worms",
+        "Apply flower paste to the scalp for dandruff control and smooth hair",
+        "Used in Ayurvedic formulations for treating bronchial infections"
+      ],
+      "caution": [
+        "Avoid overconsumption during pregnancy as it may stimulate uterine contractions",
+        "May interfere with blood-thinning medication",
+        "May lower blood sugar — monitor levels closely if diabetic"
+      ],
+      "foundIn": "Native to South Asia, especially in India and Nepal; grown in gardens and temple premises",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Nyctanthes_arbor-tristis",
+      "symptoms": ["Fever", "Malaria", "Arthritis", "Sciatica", "Joint pain", "Constipation", "Worm infestation", "Dandruff", "Bronchial infection"]
+    },
+    "27": {
+      "name": "Holy Basil (Tulsi)",
+      "scientificName": "Ocimum tenuiflorum",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, seeds, roots",
+      "uses": [
+        "Boosts immunity and respiratory health",
+        "Reduces stress and anxiety (adaptogen)",
+        "Helps in managing diabetes and cholesterol",
+        "Treats cough, cold, and throat infections"
+      ],
+      "howToUse": [
+        "Chew 5–7 fresh leaves daily for overall wellness",
+        "Boil leaves in water for a healing herbal tea to treat colds and sore throats",
+        "Add Tulsi oil to steam inhalation for sinus relief",
+        "Seed powder mixed with honey used to treat urinary tract infections"
+      ],
+      "caution": [
+        "Avoid betel nut (areca) consumption alongside — linked to oral cancer",
+        "Do not overconsume as it may cause mouth irritation or constipation",
+        "Pregnant women should consult doctor before medicinal use"
+      ],
+      "foundIn": "Widely cultivated across India; sacred in Hindu households",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ocimum_tenuiflorum",
+      "symptoms": ["Immunity", "Respiratory health", "Stress", "Anxiety", "Diabetes", "Cholesterol", "Cough", "Cold", "Throat infection"]
+    },
+    "28": {
+      "name": "Betel Leaf",
+      "scientificName": "Piper betle",
+      "family": "Piperaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Aids digestion and relieves flatulence",
+        "Used to treat cough, bad breath, and oral infections",
+        "Mild antiseptic and analgesic properties",
+        "Cultural use in rituals and Ayurvedic medicine"
+      ],
+      "howToUse": [
+        "Chew fresh leaves with a small piece of clove for breath freshening",
+        "Boil leaves and use as gargle for sore throat",
+        "Apply leaf juice on wounds or insect bites to reduce swelling",
+        "Warm betel leaves and apply externally to chest to relieve congestion"
+      ],
+      "caution": [
+        "Avoid prolonged use without medical guidance",
+        "Pregnant women should not consume the leaf juice",
+        "Overuse may lead to low blood pressure or allergic effects"
+      ],
+      "foundIn": "Common across Southeast Asia and India in warm humid climates",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Piper_betle",
+      "symptoms": ["Digestion", "Flatulence", "Cough", "Bad breath", "Oral infection", "Antiseptic needs", "Analgesic needs", "Congestion"]
+    },
+    "29": {
+      "name": "Indian Borage (Mexican Mint)",
+      "scientificName": "Plectranthus amboinicus",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Treats cough, cold, and asthma symptoms",
+        "Improves digestion and relieves bloating and acidity",
+        "Used for skin infections and insect bites",
+        "Acts as an expectorant and mild analgesic"
+      ],
+      "howToUse": [
+        "Crush fresh leaves and apply to skin for relief from rashes or bites",
+        "Make a paste with turmeric for external wounds",
+        "Juice of leaves can be taken with honey to ease asthma or bronchitis"
+      ],
+      "caution": [
+        "Raw root is toxic and caustic to skin — must be used only after purification",
+        "Avoid during pregnancy — can cause abortion",
+        "High doses can lead to severe irritation and ulcers"
+      ],
+      "foundIn": "Widely naturalized in tropical Asia, Africa, and Caribbean regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Plectranthus_amboinicus",
+      "symptoms": ["Cough", "Cold", "Asthma", "Digestion", "Bloating", "Acidity", "Skin infection", "Insect bites", "Expectorant needs", "Analgesic needs"]
+    },
+    "30": {
+      "name": "Rosea (Plumbago indica)",
+      "scientificName": "Plumbago indica",
+      "family": "Plumbaginaceae",
+      "partsUsed": "Root, leaves",
+      "uses": [
+        "Stimulates digestion and appetite",
+        "Used in skin diseases and inflammation",
+        "Helpful in treating hemorrhoids and glandular swellings",
+        "Traditionally used as an abortifacient in ancient medicine"
+      ],
+      "howToUse": [
+        "Root paste applied externally to skin infections, boils, and fungal infections",
+        "In Ayurvedic formulations (after purification) to enhance digestive fire (Agni)",
+        "Used with honey to treat cough or asthma (only in prescribed dosage)",
+        "Powdered root is taken with warm water to relieve intestinal parasites"
+      ],
+      "caution": [
+        "Raw seeds and oil are toxic if ingested",
+        "Prolonged topical use may cause skin irritation in sensitive individuals",
+        "Consult a doctor before internal use"
+      ],
+      "foundIn": "Grows in India and Southeast Asia in wild and cultivated forms",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Plumbago_indica",
+      "symptoms": ["Digestion", "Appetite loss", "Skin disease", "Inflammation", "Hemorrhoids", "Glandular swelling", "Cough", "Asthma", "Intestinal parasites"]
+    },
+    "31": {
+      "name": "Indian Beech",
+      "scientificName": "Pongamia pinnata",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves, seeds, bark, root",
+      "uses": [
+        "Oil used to treat skin diseases like eczema, psoriasis, and scabies",
+        "Has anti-inflammatory and antimicrobial properties",
+        "Used to relieve joint pain and neuralgia",
+        "Used in agriculture as a bio-pesticide and soil enricher"
+      ],
+      "howToUse": [
+        "Oil extracted from seeds applied on skin infections and wounds",
+        "Leaf juice used to clean ulcers and boils",
+        "Paste of bark used for joint and muscle pain",
+        "Traditional use of seed powder for intestinal worms (under supervision)"
+      ],
+      "caution": [
+        "Avoid unripe or sour guava if you have cold or throat issues",
+        "Excessive leaf consumption may lead to constipation",
+        "Use cautiously in people with kidney stones due to oxalate content"
+      ],
+      "foundIn": "Native to India and found in coastal and riverbank regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Millettia_pinnata",
+      "symptoms": ["Skin disease", "Eczema", "Psoriasis", "Scabies", "Inflammation", "Joint pain", "Neuralgia", "Bio-pesticide needs"]
+    },
+    "32": {
+      "name": "Guava",
+      "scientificName": "Psidium guajava",
+      "family": "Myrtaceae",
+      "partsUsed": "Leaves, fruits, bark",
+      "uses": [
+        "Leaves used to treat diarrhea, dysentery, and gastrointestinal issues",
+        "Fruits help control blood sugar and cholesterol levels",
+        "Rich in antioxidants and vitamin C — supports immunity",
+        "Aids in oral care and wound healing"
+      ],
+      "howToUse": [
+        "Boil leaves and drink decoction for stomach problems",
+        "Chew tender leaves for toothache and gum infections",
+        "Apply crushed leaves on wounds for faster healing",
+        "Eat ripe fruits regularly to improve digestion and immunity"
+      ],
+      "caution": [
+        "Avoid using bark and peel in large doses — can be astringent and toxic",
+        "May interact with blood pressure or cholesterol medications",
+        "Peel-based remedies should be supervised by Ayurvedic practitioner"
+      ],
+      "foundIn": "Widespread across tropical and subtropical regions; common in Indian backyards",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Guava",
+      "symptoms": ["Diarrhea", "Dysentery", "Gastrointestinal issues", "Blood sugar", "Cholesterol", "Immunity", "Oral care", "Wound healing"]
+    },
+    "33": {
+      "name": "Pomegranate",
+      "scientificName": "Punica granatum",
+      "family": "Lythraceae",
+      "partsUsed": "Fruits, seeds, peel, bark, flowers",
+      "uses": [
+        "Boosts hemoglobin and iron levels",
+        "Aids digestion and relieves diarrhea",
+        "Improves heart health and reduces inflammation",
+        "Peel and bark used for treating intestinal worms"
+      ],
+      "howToUse": [
+        "Juice of ripe fruit consumed to treat anemia and improve immunity",
+        "Dried peel powder used with honey for diarrhea and sore throat",
+        "Flowers used in gargles to treat bleeding gums",
+        "Bark decoction used as anti-parasitic (with expert guidance)"
+      ],
+      "caution": [
+        "Avoid applying undiluted oil on sensitive skin — may cause rashes",
+        "Internal use should be done only under strict Ayurvedic supervision",
+        "Overharvesting has led to conservation concerns — ensure sustainable sources"
+      ],
+      "foundIn": "Widely cultivated in India, Iran, and the Mediterranean region",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Pomegranate",
+      "symptoms": ["Anemia", "Low iron", "Digestion", "Diarrhea", "Heart health", "Inflammation", "Intestinal worms", "Bleeding gums"]
+    },
+    "34": {
+      "name": "Sandalwood",
+      "scientificName": "Santalum album",
+      "family": "Santalaceae",
+      "partsUsed": "Heartwood, oil, powder",
+      "uses": [
+        "Cools the body and mind — used in meditation and spiritual practices",
+        "Treats skin issues like acne, sunburn, and rashes",
+        "Used in Ayurvedic medicine for urinary tract infections and fever",
+        "Aromatic oil used in perfumes, incense, and cosmetic products"
+      ],
+      "howToUse": [
+        "Paste of sandalwood powder and rose water applied to face for glowing skin",
+        "Oil used in massage for relaxation and skin rejuvenation",
+        "Powder mixed with milk taken internally for heat-related conditions (under guidance)",
+        "Used in steam inhalation to relieve anxiety and headaches"
+      ],
+      "caution": [
+        "Excessive intake may cause constipation",
+        "Seed powder dosage must be monitored for diabetic patients under medication",
+        "May lower blood sugar — not advised before surgery"
+      ],
+      "foundIn": "Native to India; grows in Karnataka, Tamil Nadu, and Andhra Pradesh",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Santalum_album",
+      "symptoms": ["Body heat", "Skin issues", "Acne", "Sunburn", "Rashes", "Urinary tract infection", "Fever", "Aromatic needs", "Anxiety", "Headache"]
+    },
+    "35": {
+      "name": "Jamun",
+      "scientificName": "Syzygium cumini",
+      "family": "Myrtaceae",
+      "partsUsed": "Fruit, seed, bark, leaves",
+      "uses": [
+        "Helps manage diabetes by regulating blood sugar",
+        "Improves digestion and treats diarrhea",
+        "Astringent properties help in bleeding disorders",
+        "Boosts immunity and acts as a natural antioxidant"
+      ],
+      "howToUse": [
+        "Seed powder taken daily (with warm water) to help regulate blood sugar levels",
+        "Fruit pulp consumed to treat diarrhea and dysentery",
+        "Bark decoction used for mouth ulcers and gum bleeding",
+        "Juice consumed to purify blood and improve skin texture"
+      ],
+      "caution": [
+        "Unripe fruit may be acidic to the stomach",
+        "Avoid high doses of bark/seed internally — can cause nausea",
+        "Use only under supervision if pregnant"
+      ],
+      "foundIn": "Tropical Asia; commonly found in gardens and backyards in India",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Syzygium_cumini",
+      "symptoms": ["Diabetes", "Digestion", "Diarrhea", "Bleeding disorders", "Immunity", "Antioxidant needs", "Mouth ulcers", "Gum bleeding", "Skin texture"]
+    },
+    "36": {
+      "name": "Rose Apple",
+      "scientificName": "Syzygium jambos",
+      "family": "Myrtaceae",
+      "partsUsed": "Fruit, leaves, bark, seeds",
+      "uses": [
+        "Rich in vitamin C — helps in treating infections",
+        "Used in traditional medicine for fever and digestive issues",
+        "Leaves and bark are antimicrobial and anti-inflammatory",
+        "Fruit supports skin health and detoxification"
+      ],
+      "howToUse": [
+        "Fruit eaten raw to improve digestion and hydrate body",
+        "Leaf decoction taken to reduce fever or treat sore throat",
+        "Bark extract used to cleanse wounds and promote healing",
+        "Seed powder consumed (under guidance) for diarrhea"
+      ],
+      "caution": [
+        "Latex is toxic if ingested — external use only",
+        "Excessive application may cause skin irritation",
+        "Consult expert before using in sensitive areas like eyes"
+      ],
+      "foundIn": "Tropical Asia; commonly found in gardens and backyards in India",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Syzygium_jambos",
+      "symptoms": ["Vitamin C deficiency", "Infection", "Fever", "Digestive issues", "Antimicrobial needs", "Anti-inflammatory needs", "Skin health", "Detoxification", "Diarrhea"]
+    },
+    "37": {
+      "name": "Crape Jasmine",
+      "scientificName": "Tabernaemontana divaricata",
+      "family": "Apocynaceae",
+      "partsUsed": "Leaves, flowers, latex, root",
+      "uses": [
+        "Anti-inflammatory and pain-relieving properties",
+        "Traditionally used for wound healing and eye infections",
+        "Effective against toothaches and insect bites",
+        "Used in Siddha and Ayurveda for skin ailments"
+      ],
+      "howToUse": [
+        "Latex applied on boils, eczema, and ringworm",
+        "Flower paste applied to forehead for headache relief",
+        "Warm leaf poultice placed on wounds or inflamed areas",
+        "Root decoction used (with caution) for body pain"
+      ],
+      "caution": [
+        "Excessive intake may cause constipation or low blood sugar",
+        "Avoid in pregnancy unless prescribed",
+        "Prolonged unsupervised use may affect liver enzymes"
+      ],
+      "foundIn": "Commonly found across India in gardens and temple grounds",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Tabernaemontana_divaricata",
+      "symptoms": ["Inflammation", "Pain", "Wound healing", "Eye infection", "Toothache", "Insect bites", "Skin ailments"]
+    },
+    "38": {
+      "name": "Amruthaballi (Giloy)",
+      "scientificName": "Tinospora cordifolia",
+      "family": "Menispermaceae",
+      "partsUsed": "Stem, root, leaves",
+      "uses": [
+        "Immunity booster and rejuvenator (Rasayana)",
+        "Helps in managing chronic fever, diabetes, and liver disorders",
+        "Anti-inflammatory, antipyretic, and anti-allergic",
+        "Used in post-fever recovery and respiratory issues"
+      ],
+      "howToUse": [
+        "Stem juice or decoction consumed to enhance immunity",
+        "Used with neem or turmeric in treating skin diseases",
+        "Boiled with water and consumed during fever or weakness",
+        "Tablets/capsules available in Ayurveda stores for daily use"
+      ],
+      "caution": [
+        "May cause gas or bloating if consumed in large amounts",
+        "Can lower blood sugar — monitor in diabetics",
+        "Avoid high doses during pregnancy as it may induce uterine contractions"
+      ],
+      "foundIn": "Climbing shrub found widely in forests and gardens across India",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Tinospora_cordifolia",
+      "symptoms": ["Immunity", "Chronic fever", "Diabetes", "Liver disorder", "Inflammation", "Allergy", "Post-fever recovery", "Respiratory issues"]
+    },
+    "39": {
+      "name": "Fenugreek",
+      "scientificName": "Trigonella foenum-graecum",
+      "family": "Fabaceae",
+      "partsUsed": "Seeds, leaves",
+      "uses": [
+        "Improves digestion and reduces blood sugar levels",
+        "Promotes lactation in nursing mothers",
+        "Lowers cholesterol and improves heart health",
+        "Aids in weight loss and boosts metabolism"
+      ],
+      "howToUse": [
+        "Seeds soaked overnight and consumed on empty stomach for diabetes and digestion",
+        "Powdered seeds used in curry or as herbal supplement",
+        "Leaves cooked as vegetables for iron and fiber intake",
+        "Fenugreek tea used for menstrual cramps and inflammation"
+      ],
+      "caution": [
+        "May cause gas or bloating if consumed in large amounts",
+        "Can lower blood sugar — monitor in diabetics",
+        "Avoid high doses during pregnancy as it may induce uterine contractions"
+      ],
+      "foundIn": "Cultivated across India, Mediterranean and Middle Eastern regions",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Fenugreek",
+      "symptoms": ["Digestion", "Blood sugar", "Lactation", "Cholesterol", "Heart health", "Weight loss", "Metabolism", "Menstrual cramps", "Inflammation"]
+    },
+    "41": {
+      "name": "Doddapatre (Indian Borage)",
+      "scientificName": "Plectranthus amboinicus",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Relieves cough, cold, bronchitis",
+        "Aids digestion and relieves flatulence",
+        "Soothes skin irritation and insect bites"
+      ],
+      "howToUse": [
+        "Crush fresh leaves and inhale steam for respiratory relief",
+        "Apply paste on rashes or insect bites",
+        "Boil leaves to make tea for digestion"
+      ],
+      "caution": [
+        "May irritate sensitive skin—patch-test before use",
+        "Avoid excessive internal use during pregnancy"
+      ],
+      "foundIn": "Commonly grown in home gardens in coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Plectranthus_amboinicus",
+      "symptoms": ["Cough", "Cold", "Digestive issues", "Skin irritation"]
+    },
+    "42": {
+      "name": "Bel Leaf (Wood Apple)",
+      "scientificName": "Aegle marmelos",
+      "family": "Rutaceae",
+      "partsUsed": "Leaves, fruit",
+      "uses": [
+        "Treats diarrhea, dysentery",
+        "Helps control blood sugar",
+        "Aids in respiratory illnesses like asthma"
+      ],
+      "howToUse": [
+        "Chew raw leaf extracts or make leaf juice for digestion",
+        "Eat ripe fruit pulp to relieve diarrhea",
+        "Use leaf decoction for asthma relief"
+      ],
+      "caution": [
+        "Avoid in pregnancy—leaf may stimulate uterine contractions",
+        "Large doses may cause constipation or slow bowel movements"
+      ],
+      "foundIn": "Native and cultivated across Karnataka, often in temple courtyards",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Aegle_marmelos",
+      "symptoms": ["Diarrhea", "Dysentery", "Asthma", "High blood sugar"]
+    },
+    "43": {
+      "name": "Indian Gooseberry (Amla)",
+      "scientificName": "Phyllanthus emblica",
+      "family": "Phyllanthaceae",
+      "partsUsed": "Fruit",
+      "uses": [
+        "Rich in vitamin C—boosts immunity",
+        "Supports liver detoxification",
+        "Improves digestion and hair/skin health"
+      ],
+      "howToUse": [
+        "Eat 1 fresh fruit daily",
+        "Use powdered amla in smoothies or warm water",
+        "Apply juice mixed with yogurt on skin and hair"
+      ],
+      "caution": [
+        "May cause gastric upset in high amounts",
+        "Acidic fruit may erode tooth enamel—rinse mouth after use"
+      ],
+      "foundIn": "Native to Indian subcontinent, grown in home gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phyllanthus_emblica",
+      "symptoms": ["Low immunity", "Digestive issues", "Hair/skin dullness"]
+    },
+    "44": {
+      "name": "Guduchi (Giloy)",
+      "scientificName": "Tinospora cordifolia",
+      "family": "Menispermaceae",
+      "partsUsed": "Stem",
+      "uses": [
+        "Boosts immunity, reduces fever",
+        "Supports liver/kidney health",
+        "Acts as anti-inflammatory"
+      ],
+      "howToUse": [
+        "Boil stem pieces in water and drink daily",
+        "Use stem juice with honey for immunity"
+      ],
+      "caution": [
+        "May lower blood sugar—monitor if diabetic",
+        "Avoid very high doses in pregnancy without medical advice"
+      ],
+      "foundIn": "Climbing shrub found in Western Ghats and temple areas",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Tinospora_cordifolia",
+      "symptoms": ["Fever", "Low immunity", "Inflammation", "Liver issues"]
+    },
+    "45": {
+      "name": "Kunthe (Indian Pennywort)",
+      "scientificName": "Centella asiatica",
+      "family": "Apiaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Enhances memory and concentration",
+        "Reduces anxiety and stress",
+        "Promotes wound healing"
+      ],
+      "howToUse": [
+        "Eat fresh or make juice daily",
+        "Use paste on minor wounds",
+        "Steep leaves in hot water as brain tonic tea"
+      ],
+      "caution": [
+        "May cause drowsiness in large doses",
+        "Avoid before surgery—can lower blood pressure"
+      ],
+      "foundIn": "Grows in wet, shady places across Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Centella_asiatica",
+      "symptoms": ["Memory loss", "Stress", "Anxiety", "Minor wounds"]
+    },
+    "46": {
+      "name": "Malkheda",
+      "scientificName": "Panicum polyphyllum",
+      "family": "Poaceae",
+      "partsUsed": "Whole plant",
+      "uses": [
+        "Relieves fever and urinary infections",
+        "Used as cooling agent"
+      ],
+      "howToUse": [
+        "Prepare whole-plant decoction, drink twice daily",
+        "Use external paste for skin inflammations"
+      ],
+      "caution": [
+        "Rare allergic reactions—monitor on first use",
+        "Large internal use may affect kidney function"
+      ],
+      "foundIn": "Shaded moist Western Ghats undergrowth",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Panicum",
+      "symptoms": ["Fever", "Urinary infections", "Skin inflammation"]
+    },
+    "47": {
+      "name": "Thimma (Wild Ginger)",
+      "scientificName": "Curcuma caesia",
+      "family": "Zingiberaceae",
+      "partsUsed": "Rhizome",
+      "uses": [
+        "Natural analgesic—relieves muscle and joint pain",
+        "Improves respiratory disorders, colds"
+      ],
+      "howToUse": [
+        "Make paste from rhizome and warm oil for massage",
+        "Boil slices in water for tea"
+      ],
+      "caution": [
+        "Strong warming herb—avoid during pregnancy",
+        "May irritate skin or stomach in sensitive individuals"
+      ],
+      "foundIn": "Rare wild species in Western Ghats forests of Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Curcuma_caesia",
+      "symptoms": ["Muscle pain", "Joint pain", "Cold", "Congestion"]
+    },
+    "48": {
+      "name": "Nagarmotha (Nutgrass)",
+      "scientificName": "Cyperus rotundus",
+      "family": "Cyperaceae",
+      "partsUsed": "Rhizomes",
+      "uses": [
+        "Aids digestion and treats bloating",
+        "Helps reduce fever and regulates menstruation",
+        "Used in weight management"
+      ],
+      "howToUse": [
+        "Boil rhizome powder in water as tea",
+        "Use paste externally for skin ulcers"
+      ],
+      "caution": [
+        "Can be irritating in high doses",
+        "Avoid during pregnancy unless prescribed"
+      ],
+      "foundIn": "Common in fields, gardens across Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cyperus_rotundus",
+      "symptoms": ["Bloating", "Digestive issues", "Fever", "Menstrual irregularities"]
+    },
+    "49": {
+      "name": "Japa",
+      "scientificName": "Abrus precatorius",
+      "family": "Fabaceae",
+      "partsUsed": "Seeds, leaves",
+      "uses": [
+        "Anti-inflammatory and antibacterial upper respiratory",
+        "Used in joint pain and fever"
+      ],
+      "howToUse": [
+        "Apply leaf or seed/leaf paste externally",
+        "Leaf decoction for gargling and topical use"
+      ],
+      "caution": [
+        "Seeds are highly toxic—*DO NOT ingest*",
+        "Use only external paste of leaves"
+      ],
+      "foundIn": "Cultivated as ornamental & along Western Ghats roadsides",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Abrus_precatorius",
+      "symptoms": ["Joint pain", "Fever", "Sore throat"]
+    },
+    "50": {
+      "name": "Nagakesara",
+      "scientificName": "Mesua ferrea",
+      "family": "Calophyllaceae",
+      "partsUsed": "Flowers, seeds, bark",
+      "uses": [
+        "Anti-inflammatory, treats skin ulcers",
+        "Supports menstruation and dysentery relief",
+        "Boosts immunity"
+      ],
+      "howToUse": [
+        "Make flower paste for topical wounds",
+        "Boil seeds for menstrual cramps relief"
+      ],
+      "caution": [
+        "May cause blood thinning—avoid before surgery",
+        "Use moderate doses in pregnancy"
+      ],
+      "foundIn": "Wet evergreen forests of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mesua_ferrea",
+      "symptoms": ["Skin ulcers", "Menstrual pain", "Dysentery"]
+    },
+    "51": {
+      "name": "Nirgundi",
+      "scientificName": "Vitex negundo",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, seeds, roots",
+      "uses": [
+        "Reduces joint pain and inflammation",
+        "Relieves cough, asthma symptoms",
+        "Helps heal wounds and ulcers"
+      ],
+      "howToUse": [
+        "Use leaf paste on swollen joints",
+        "Boil leaves for steam inhalation in asthma",
+        "Apply leaf decoction on wounds"
+      ],
+      "caution": [
+        "Avoid internal use in pregnancy",
+        "Possible skin irritation—test before external application"
+      ],
+      "foundIn": "Common in hedges and fields of Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Vitex_negundo",
+      "symptoms": ["Joint pain", "Swelling", "Asthma", "Wounds"]
+    },
+    "52": {
+      "name": "Murivenna",
+      "scientificName": "Moringa concanensis",
+      "family": "Moringaceae",
+      "partsUsed": "Leaves, bark",
+      "uses": [
+        "Relieves bone fractures, sprains",
+        "Soothes muscle inflammation",
+        "Used as skin healing agent"
+      ],
+      "howToUse": [
+        "Apply leaf paste externally on fractures and sprains",
+        "Use leaf decoction as wash for wounds"
+      ],
+      "caution": [
+        "External use only—consult practitioner before internal use"
+      ],
+      "foundIn": "Native to Western Ghats and coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Moringa_concanensis",
+      "symptoms": ["Bone fractures", "Sprains", "Muscle pain"]
+    },
+    "53": {
+      "name": "Bhumyamalaki",
+      "scientificName": "Phyllanthus niruri",
+      "family": "Phyllanthaceae",
+      "partsUsed": "Whole plant",
+      "uses": [
+        "Supports liver health and treats jaundice",
+        "Helps manage kidney stones",
+        "Aids digestion and reduces bloating"
+      ],
+      "howToUse": [
+        "Boil whole plant and drink decoction",
+        "Use dried powder in honey daily"
+      ],
+      "caution": [
+        "May lower blood sugar—monitor if diabetic",
+        "Consult doctor before long-term use"
+      ],
+      "foundIn": "Grows wild in moist areas of Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phyllanthus_niruri",
+      "symptoms": ["Jaundice", "Kidney stones", "Liver disorders"]
+    },
+    "54": {
+      "name": "Punarnava",
+      "scientificName": "Boerhavia diffusa",
+      "family": "Nyctaginaceae",
+      "partsUsed": "Roots, leaves",
+      "uses": [
+        "Acts as diuretic—reduces swelling",
+        "Supports kidney and liver health",
+        "Relieves respiratory disorders"
+      ],
+      "howToUse": [
+        "Boil root and drink as tea",
+        "Use leaf juice for cough relief"
+      ],
+      "caution": [
+        "Avoid during pregnancy",
+        "Consult doctor in kidney disease"
+      ],
+      "foundIn": "Fields and roadsides in coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Boerhavia_diffusa",
+      "symptoms": ["Swelling", "Kidney issues", "Liver issues", "Cough"]
+    },
+    "55": {
+      "name": "Manjal Karisale (Wild Turmeric)",
+      "scientificName": "Curcuma aromatica",
+      "family": "Zingiberaceae",
+      "partsUsed": "Rhizome",
+      "uses": [
+        "Improves skin complexion",
+        "Antiseptic for wounds and cuts",
+        "Reduces inflammation"
+      ],
+      "howToUse": [
+        "Use rhizome paste on face as mask",
+        "Apply paste on wounds",
+        "Mix powder in milk and drink for inflammation"
+      ],
+      "caution": [
+        "May stain clothes and skin",
+        "Avoid in pregnancy in high doses"
+      ],
+      "foundIn": "Common in Western Ghats forests",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Curcuma_aromatica",
+      "symptoms": ["Skin issues", "Wounds", "Inflammation"]
+    },
+    "56": {
+      "name": "Shankhapushpi",
+      "scientificName": "Clitoria ternatea",
+      "family": "Fabaceae",
+      "partsUsed": "Whole plant",
+      "uses": [
+        "Enhances memory and cognition",
+        "Relieves stress and anxiety",
+        "Helps in insomnia"
+      ],
+      "howToUse": [
+        "Prepare tea with flowers",
+        "Use powder with honey daily"
+      ],
+      "caution": [
+        "May cause mild drowsiness",
+        "Consult before use in pregnancy"
+      ],
+      "foundIn": "Hedges, fields across Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Clitoria_ternatea",
+      "symptoms": ["Memory loss", "Anxiety", "Insomnia"]
+    },
+    "57": {
+      "name": "Kakamachi (Black Nightshade)",
+      "scientificName": "Solanum nigrum",
+      "family": "Solanaceae",
+      "partsUsed": "Leaves, berries",
+      "uses": [
+        "Treats liver disorders and jaundice",
+        "Relieves pain and swelling",
+        "Improves appetite and digestion"
+      ],
+      "howToUse": [
+        "Use cooked leaves in diet",
+        "Make leaf decoction for liver health"
+      ],
+      "caution": [
+        "Raw berries toxic in large amounts",
+        "Avoid during pregnancy"
+      ],
+      "foundIn": "Grows wild in coastal Karnataka gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Solanum_nigrum",
+      "symptoms": ["Jaundice", "Swelling", "Digestive issues"]
+    },
+    "58": {
+      "name": "Agave",
+      "scientificName": "Agave americana",
+      "family": "Asparagaceae",
+      "partsUsed": "Leaves, sap",
+      "uses": [
+        "Relieves skin burns and wounds",
+        "Acts as mild laxative",
+        "Used for antiseptic properties"
+      ],
+      "howToUse": [
+        "Apply sap on burns",
+        "Consume small amounts internally for constipation"
+      ],
+      "caution": [
+        "Raw sap can be irritating—handle with care",
+        "Consult physician before internal use"
+      ],
+      "foundIn": "Often grown in fences and gardens in Mangalore region",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Agave_americana",
+      "symptoms": ["Burns", "Wounds", "Constipation"]
+    },
+    "59": {
+      "name": "Kolikehannu (Wild Strawberry Tree)",
+      "scientificName": "Muntingia calabura",
+      "family": "Muntingiaceae",
+      "partsUsed": "Fruit, leaves",
+      "uses": [
+        "Relieves respiratory infections",
+        "Rich in antioxidants—boosts immunity",
+        "Helps in mild pain relief"
+      ],
+      "howToUse": [
+        "Eat ripe fruits fresh",
+        "Use leaf decoction for cough"
+      ],
+      "caution": [
+        "Moderate use advised—excess fruit may cause stomach upset"
+      ],
+      "foundIn": "Common roadside tree in Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Muntingia_calabura",
+      "symptoms": ["Cough", "Respiratory issues", "Weak immunity"]
+    },
+    "60": {
+      "name": "Lakshmi Taru",
+      "scientificName": "Simarouba glauca",
+      "family": "Simaroubaceae",
+      "partsUsed": "Leaves, bark, seeds",
+      "uses": [
+        "Helps in malaria treatment",
+        "Supports liver and digestive health",
+        "Used traditionally for cancer management"
+      ],
+      "howToUse": [
+        "Boil leaf decoction for malaria relief",
+        "Use seed oil externally on skin"
+      ],
+      "caution": [
+        "Avoid during pregnancy and lactation",
+        "Consult practitioner before long-term use"
+      ],
+      "foundIn": "Planted along roadsides in coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Simarouba_glauca",
+      "symptoms": ["Malaria", "Liver issues", "Digestive issues"]
+    },
+    "61": {
+      "name": "Matti Soppu (False Daisy)",
+      "scientificName": "Eclipta prostrata",
+      "family": "Asteraceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Promotes hair growth and scalp health",
+        "Supports liver detoxification",
+        "Helps heal skin wounds"
+      ],
+      "howToUse": [
+        "Apply crushed leaf paste on scalp",
+        "Drink boiled leaf decoction for liver support",
+        "Use paste on minor cuts or abrasions"
+      ],
+      "caution": [
+        "May cause diarrhea if taken in excess",
+        "Avoid during pregnancy"
+      ],
+      "foundIn": "Common in shady, moist areas of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Eclipta_prostrata",
+      "symptoms": ["Hair loss", "Liver issues", "Skin wounds"]
+    },
+    "62": {
+      "name": "Karibevu (Chinese Chaste Tree)",
+      "scientificName": "Vitex trifolia",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, seeds, bark",
+      "uses": [
+        "Treats fever and respiratory infections",
+        "Anti-inflammatory for joint pain",
+        "Relieves headache and fever"
+      ],
+      "howToUse": [
+        "Boil leaves for steam inhalation",
+        "Apply crushed leaves on painful joints",
+        "Use leaf decoction for headache relief"
+      ],
+      "caution": [
+        "Avoid during pregnancy",
+        "May cause mild skin irritation"
+      ],
+      "foundIn": "Coastal shrubs and hedges in Mangalore region",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Vitex_trifolia",
+      "symptoms": ["Fever", "Headache", "Joint pain", "Respiratory issues"]
+    },
+    "63": {
+      "name": "Grape Ivy",
+      "scientificName": "Cissus quadrangularis",
+      "family": "Vitaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Heals bone fractures and wounds",
+        "Reduces joint inflammation",
+        "Treats hemorrhoids"
+      ],
+      "howToUse": [
+        "Apply leaf/stem paste externally",
+        "Drink stem decoction for fractures"
+      ],
+      "caution": [
+        "May cause digestive upset",
+        "Avoid during pregnancy"
+      ],
+      "foundIn": "Found wild and in gardens of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Cissus_quadrangularis",
+      "symptoms": ["Bone pain", "Joint pain", "Hemorrhoids"]
+    },
+    "67": {
+      "name": "Chocolate Nerved Lady Fern",
+      "scientificName": "Athyrium filix-femina",
+      "family": "Athyriaceae",
+      "partsUsed": "Leaves (fronds)",
+      "uses": [
+        "Used for skin inflammation and burns",
+        "Treats eczema and blisters"
+      ],
+      "howToUse": [
+        "Crush fresh fronds and apply to affected skin",
+        "Use frond extract as soothing lotion"
+      ],
+      "caution": [
+        "Patch-test—may cause mild irritation",
+        "Limited internal use info—avoid ingestion"
+      ],
+      "foundIn": "Shady forest undergrowth in Western Ghats",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Athyrium_filix-femina",
+      "symptoms": ["Burns", "Eczema", "Skin blisters"]
+    },
+    "68": {
+      "name": "Indian Sarsaparilla",
+      "scientificName": "Hemidesmus indicus",
+      "family": "Apocynaceae",
+      "partsUsed": "Leaves, root",
+      "uses": [
+        "Purifies blood",
+        "Treats skin disease",
+        "Eases urinary tract infections"
+      ],
+      "howToUse": [
+        "Boil leaves and root for decoction",
+        "Drink once daily"
+      ],
+      "caution": [
+        "Avoid in pregnancy",
+        "May cause mild laxative effect"
+      ],
+      "foundIn": "Grows in scrub forests of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Hemidesmus_indicus",
+      "symptoms": ["Skin rash", "UTI", "Blood purification"]
+    },
+    "69": {
+      "name": "Lippia nodiflora (Mat grass)",
+      "scientificName": "Phyla nodiflora",
+      "family": "Verbenaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Reduces inflammation and fever",
+        "Heals wounds",
+        "Alleviates stomach cramps"
+      ],
+      "howToUse": [
+        "Apply crushed leaves to wounds",
+        "Drink leaf tea for fever relief"
+      ],
+      "caution": [
+        "Mild herb—safe in small doses",
+        "Monitor for allergies"
+      ],
+      "foundIn": "Found in lawns and moist open ground in Mangalore",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phyla_nodiflora",
+      "symptoms": ["Inflammation", "Fever", "Wounds", "Stomach cramps"]
+    },
+    "70": {
+      "name": "Indian Valerian",
+      "scientificName": "Valeriana jatamansi",
+      "family": "Caprifoliaceae",
+      "partsUsed": "Leaves, roots",
+      "uses": [
+        "Relieves anxiety and insomnia",
+        "Used in mental calmness and stress management"
+      ],
+      "howToUse": [
+        "Drink tea made from leaves and root",
+        "Apply paste for headache relief"
+      ],
+      "caution": [
+        "May cause drowsiness—avoid driving",
+        "Avoid in pregnancy"
+      ],
+      "foundIn": "Cooler Western Ghats elevations of Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Valeriana_jatamansi",
+      "symptoms": ["Anxiety", "Insomnia", "Headache", "Stress"]
+    },
+    "71": {
+      "name": "Asystasia Gangetica (Chinese Violet)",
+      "scientificName": "Asystasia gangetica",
+      "family": "Acanthaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Treats cough and cold symptoms",
+        "Reduces inflammation and swelling",
+        "Promotes wound healing"
+      ],
+      "howToUse": [
+        "Drink leaf decoction for cough relief",
+        "Apply crushed leaves to swellings and cuts"
+      ],
+      "caution": [
+        "Avoid large doses internally",
+        "Test patch before skin use"
+      ],
+      "foundIn": "Roadsides and gardens of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Asystasia_gangetica",
+      "symptoms": ["Cough", "Cold", "Inflammation", "Wounds"]
+    },
+    "72": {
+      "name": "Calotropis Gigantea (Giant Milkweed)",
+      "scientificName": "Calotropis gigantea",
+      "family": "Apocynaceae",
+      "partsUsed": "Leaves, latex",
+      "uses": [
+        "Relieves joint pain",
+        "Promotes wound healing",
+        "Reduces skin infections"
+      ],
+      "howToUse": [
+        "Warm leaves and bandage on swollen joints",
+        "Apply latex externally to warts"
+      ],
+      "caution": [
+        "Latex is toxic internally",
+        "Use carefully on skin"
+      ],
+      "foundIn": "Waste lands, open fields of Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Calotropis_gigantea",
+      "symptoms": ["Joint pain", "Swelling", "Skin infections"]
+    },
+    "73": {
+      "name": "Cassia Tora (Sickle Senna)",
+      "scientificName": "Senna tora",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves, seeds",
+      "uses": [
+        "Reduces skin itching and eczema",
+        "Supports digestion"
+      ],
+      "howToUse": [
+        "Apply crushed leaves on affected skin",
+        "Use leaf decoction internally for digestion (consult expert)"
+      ],
+      "caution": [
+        "Avoid during pregnancy",
+        "High doses can be laxative"
+      ],
+      "foundIn": "Fields and roadsides across Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Senna_tora",
+      "symptoms": ["Eczema", "Skin rash", "Constipation"]
+    },
+    "74": {
+      "name": "Portulaca Oleracea (Purslane)",
+      "scientificName": "Portulaca oleracea",
+      "family": "Portulacaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Reduces inflammation",
+        "High in Omega-3 for heart health",
+        "Helps treat minor skin wounds"
+      ],
+      "howToUse": [
+        "Eat raw or cooked leaves in salads",
+        "Apply crushed leaves to cuts"
+      ],
+      "caution": [
+        "Safe in moderation",
+        "May cause mild diarrhea if consumed in excess"
+      ],
+      "foundIn": "Gardens and wastelands of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Portulaca_oleracea",
+      "symptoms": ["Inflammation", "Minor wounds"]
+    },
+    "75": {
+      "name": "Tridax Procumbens (Coat Buttons)",
+      "scientificName": "Tridax procumbens",
+      "family": "Asteraceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Accelerates wound healing",
+        "Anti-inflammatory",
+        "Controls bleeding"
+      ],
+      "howToUse": [
+        "Apply crushed leaves on wounds",
+        "Use decoction for minor skin issues"
+      ],
+      "caution": [
+        "Avoid contact with eyes",
+        "Check for allergies"
+      ],
+      "foundIn": "Open spaces, fields of Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Tridax_procumbens",
+      "symptoms": ["Wounds", "Inflammation", "Bleeding cuts"]
+    },
+    "76": {
+      "name": "Euphorbia Hirta (Asthma Weed)",
+      "scientificName": "Euphorbia hirta",
+      "family": "Euphorbiaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Relieves asthma symptoms",
+        "Treats diarrhea",
+        "Reduces skin infections"
+      ],
+      "howToUse": [
+        "Use leaf infusion for asthma relief",
+        "Apply paste on skin conditions"
+      ],
+      "caution": [
+        "Consult doctor before internal use",
+        "May cause stomach upset in excess"
+      ],
+      "foundIn": "Fields and roadsides in Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Euphorbia_hirta",
+      "symptoms": ["Asthma", "Diarrhea", "Skin infections"]
+    },
+    "77": {
+      "name": "Alternanthera Sessilis (Sessile Joyweed)",
+      "scientificName": "Alternanthera sessilis",
+      "family": "Amaranthaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Reduces fever",
+        "Promotes wound healing",
+        "Improves digestion"
+      ],
+      "howToUse": [
+        "Boil leaves and drink as herbal tea",
+        "Apply paste on wounds"
+      ],
+      "caution": [
+        "Generally safe in food quantities",
+        "Consult for medicinal doses"
+      ],
+      "foundIn": "Wet fields and canals of Mangalore",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alternanthera_sessilis",
+      "symptoms": ["Fever", "Digestive issues", "Wounds"]
+    },
+    "78": {
+      "name": "Leucas Aspera (Thumbe)",
+      "scientificName": "Leucas aspera",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, flowers",
+      "uses": [
+        "Relieves cough and cold",
+        "Reduces skin itching",
+        "Treats insect bites"
+      ],
+      "howToUse": [
+        "Boil leaves for steam inhalation",
+        "Apply leaf paste to insect bites"
+      ],
+      "caution": [
+        "Avoid in pregnancy",
+        "Check skin sensitivity"
+      ],
+      "foundIn": "Fields and home gardens of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leucas_aspera",
+      "symptoms": ["Cough", "Cold", "Insect bites", "Skin itching"]
+    },
+    "79": {
+      "name": "Mikania Micrantha (Mile-a-minute weed)",
+      "scientificName": "Mikania micrantha",
+      "family": "Asteraceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Reduces inflammation",
+        "Heals cuts and wounds",
+        "Traditionally used for rheumatic pain"
+      ],
+      "howToUse": [
+        "Apply leaf paste externally",
+        "Use leaf poultice on painful joints"
+      ],
+      "caution": [
+        "Avoid internal use",
+        "Use sparingly due to invasiveness"
+      ],
+      "foundIn": "Riverbanks and fields of Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Mikania_micrantha",
+      "symptoms": ["Wounds", "Inflammation", "Joint pain"]
+    },
+    "80": {
+      "name": "Oxalis Corniculata (Creeping Wood Sorrel)",
+      "scientificName": "Oxalis corniculata",
+      "family": "Oxalidaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Reduces diarrhea",
+        "Cools inflammation",
+        "Relieves minor skin rashes"
+      ],
+      "howToUse": [
+        "Chew fresh leaves in small quantity",
+        "Apply leaf paste on rashes"
+      ],
+      "caution": [
+        "Excess may irritate stomach",
+        "Consult expert for regular use"
+      ],
+      "foundIn": "Lawn edges, moist soil of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Oxalis_corniculata",
+      "symptoms": ["Diarrhea", "Inflammation", "Skin rashes"]
+    },
+    "82": {
+      "name": "Ipomoea Aquatica (Water Spinach)",
+      "scientificName": "Ipomoea aquatica",
+      "family": "Convolvulaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Rich in iron and vitamins",
+        "Cools body heat",
+        "Improves digestion"
+      ],
+      "howToUse": [
+        "Cook as vegetable",
+        "Drink boiled leaf water"
+      ],
+      "caution": [
+        "Wash thoroughly before use",
+        "May accumulate pollutants in water-grown areas"
+      ],
+      "foundIn": "Ponds and canals in coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Ipomoea_aquatica",
+      "symptoms": ["Heat", "Digestive issues", "Weakness"]
+    },
+    "83": {
+      "name": "Marsilea Quadrifolia (Water Clover)",
+      "scientificName": "Marsilea quadrifolia",
+      "family": "Marsileaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Traditionally used for snake bites",
+        "Helps in skin wound healing",
+        "Cooling and anti-inflammatory"
+      ],
+      "howToUse": [
+        "Apply crushed leaves externally",
+        "Use fresh leaf paste on bite site"
+      ],
+      "caution": [
+        "Seek medical care for snake bites",
+        "Use only as adjunct therapy"
+      ],
+      "foundIn": "Wet paddy fields, ponds in Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Marsilea_quadrifolia",
+      "symptoms": ["Snake bite", "Wounds", "Inflammation"]
+    },
+    "84": {
+      "name": "Alternanthera Philoxeroides (Alligator Weed)",
+      "scientificName": "Alternanthera philoxeroides",
+      "family": "Amaranthaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Relieves inflammation",
+        "Used in poultice for sprains",
+        "Promotes wound healing"
+      ],
+      "howToUse": [
+        "Apply fresh leaves on swellings",
+        "Use leaf poultice on wounds"
+      ],
+      "caution": [
+        "Use externally only",
+        "Avoid over-harvesting as invasive"
+      ],
+      "foundIn": "Ponds and wetlands in Mangalore",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alternanthera_philoxeroides",
+      "symptoms": ["Swelling", "Sprains", "Wounds"]
+    },
+    "85": {
+      "name": "Commelina Benghalensis (Benghal Dayflower)",
+      "scientificName": "Commelina benghalensis",
+      "family": "Commelinaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Relieves swelling and inflammation",
+        "Treats boils and skin infections"
+      ],
+      "howToUse": [
+        "Apply crushed leaf poultice to affected area"
+      ],
+      "caution": [
+        "Use externally only",
+        "Avoid ingestion"
+      ],
+      "foundIn": "Gardens and field edges of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Commelina_benghalensis",
+      "symptoms": ["Swelling", "Boils", "Skin infections"]
+    },
+    "86": {
+      "name": "Achyranthes Aspera (Prickly Chaff Flower)",
+      "scientificName": "Achyranthes aspera",
+      "family": "Amaranthaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Relieves headache and fever",
+        "Reduces joint pain",
+        "Helps treat respiratory issues"
+      ],
+      "howToUse": [
+        "Boil leaves and inhale steam",
+        "Apply leaf paste on forehead",
+        "Drink leaf decoction for joint pain"
+      ],
+      "caution": [
+        "Avoid during pregnancy",
+        "May cause skin irritation"
+      ],
+      "foundIn": "Fields, roadsides throughout Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Achyranthes_aspera",
+      "symptoms": ["Headache", "Fever", "Joint pain", "Cold"]
+    },
+    "87": {
+      "name": "Clerodendrum Phillyreifolium (East Indian Glory Bower)",
+      "scientificName": "Clerodendrum phlomidis",
+      "family": "Lamiaceae",
+      "partsUsed": "Leaves, bark",
+      "uses": [
+        "Relieves joint pain and swelling",
+        "Antimicrobial action"
+      ],
+      "howToUse": [
+        "Apply warm leaf paste on joints",
+        "Use leaf decoction for mouthwash"
+      ],
+      "caution": [
+        "Avoid in pregnancy",
+        "Patch-test for allergies"
+      ],
+      "foundIn": "Shrubby areas in Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Clerodendrum_phlomidis",
+      "symptoms": ["Joint pain", "Swelling", "Oral infection"]
+    },
+    "88": {
+      "name": "Glycyrrhiza Glabra (Licorice)",
+      "scientificName": "Glycyrrhiza glabra",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves, roots",
+      "uses": [
+        "Soothes sore throat",
+        "Supports respiratory health",
+        "Anti-inflammatory"
+      ],
+      "howToUse": [
+        "Chew leaves for throat relief",
+        "Drink root-leaf tea for cough"
+      ],
+      "caution": [
+        "May raise blood pressure",
+        "Avoid long-term use"
+      ],
+      "foundIn": "Cultivated in medicinal herb gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Glycyrrhiza_glabra",
+      "symptoms": ["Sore throat", "Cough", "Inflammation"]
+    },
+    "89": {
+      "name": "Stephania Glabra (Indian Serpent Wood)",
+      "scientificName": "Stephania glabra",
+      "family": "Menispermaceae",
+      "partsUsed": "Leaves, roots",
+      "uses": [
+        "Relieves muscular pain",
+        "Supports joint mobility"
+      ],
+      "howToUse": [
+        "Apply leaf-root paste on painful areas",
+        "Drink decoction in small doses"
+      ],
+      "caution": [
+        "Too strong for children",
+        "Patch-test before use"
+      ],
+      "foundIn": "Western Ghats forest floor",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Stephania_glabra",
+      "symptoms": ["Muscle pain", "Joint stiffness"]
+    },
+    "90": {
+      "name": "Phyllanthus amarus (Stonebreaker)",
+      "scientificName": "Phyllanthus amarus",
+      "family": "Phyllanthaceae",
+      "partsUsed": "Leaves, whole plant",
+      "uses": [
+        "Treats kidney stones",
+        "Supports liver function"
+      ],
+      "howToUse": [
+        "Drink boiled plant decoction",
+        "Chew fresh leaves"
+      ],
+      "caution": [
+        "May lower blood pressure",
+        "Monitor kidney health"
+      ],
+      "foundIn": "Moist shady areas of Dakshina Kannada",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Phyllanthus_amarus",
+      "symptoms": ["Kidney stones", "Liver issues"]
+    },
+    "91": {
+      "name": "Acalypha Indica (Indian Copperleaf)",
+      "scientificName": "Acalypha indica",
+      "family": "Euphorbiaceae",
+      "partsUsed": "Leaves, stems",
+      "uses": [
+        "Relieves cough and bronchitis",
+        "Anti-tussive"
+      ],
+      "howToUse": [
+        "Boil leaves and inhale steam",
+        "Apply leaf paste on throat"
+      ],
+      "caution": [
+        "Avoid prolonged internal use",
+        "Not for pregnant women"
+      ],
+      "foundIn": "Common weed in Karnataka gardens",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Acalypha_indica",
+      "symptoms": ["Cough", "Bronchitis"]
+    },
+    "93": {
+      "name": "Alysicarpus Vaginalis (Moneywort)",
+      "scientificName": "Alysicarpus vaginalis",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Treats skin rashes",
+        "Anti-fungal"
+      ],
+      "howToUse": [
+        "Apply leaf paste on rashes",
+        "Use leaf decoction as wash"
+      ],
+      "caution": [
+        "External use only",
+        "Patch-test before application"
+      ],
+      "foundIn": "Lawn edges and grassy areas",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Alysicarpus_vaginalis",
+      "symptoms": ["Rashes", "Fungal infection"]
+    },
+    "94": {
+      "name": "Croton Tiglium (Purging Croton)",
+      "scientificName": "Croton tiglium",
+      "family": "Euphorbiaceae",
+      "partsUsed": "Leaves, seeds",
+      "uses": [
+        "Used in topical pain relief",
+        "Antimicrobial for skin"
+      ],
+      "howToUse": [
+        "Apply leaf paste externally",
+        "Use diluted seed oil for massage"
+      ],
+      "caution": [
+        "Highly toxic internally",
+        "External only, dilute before use"
+      ],
+      "foundIn": "Western Ghats forest edges",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Croton_tiglium",
+      "symptoms": ["Pain", "Skin infection"]
+    },
+    "95": {
+      "name": "Leea Indica (Bhrungraj Spurge)",
+      "scientificName": "Leea indica",
+      "family": "Vitaceae",
+      "partsUsed": "Leaves",
+      "uses": [
+        "Relieves headache",
+        "Supports digestive health"
+      ],
+      "howToUse": [
+        "Crush leaves; apply on forehead",
+        "Drink mild leaf tea"
+      ],
+      "caution": [
+        "Patch-test before topical use",
+        "Avoid in pregnancy"
+      ],
+      "foundIn": "Forest understory in coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Leea_indica",
+      "symptoms": ["Headache", "Indigestion"]
+    },
+    "96": {
+      "name": "Sesbania Grandiflora (Hummingbird Tree)",
+      "scientificName": "Sesbania grandiflora",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves, flowers",
+      "uses": [
+        "Supports digestion",
+        "Helps reduce fever"
+      ],
+      "howToUse": [
+        "Eat leaves in salads or soup",
+        "Use flower decoction for fever"
+      ],
+      "caution": [
+        "Not for pregnant women in large doses",
+        "Moderate amounts safe"
+      ],
+      "foundIn": "Cultivated in gardens of coastal Karnataka",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Sesbania_grandiflora",
+      "symptoms": ["Digestion", "Fever"]
+    },
+    "97": {
+      "name": "Tamarindus Indica (Tamarind)",
+      "scientificName": "Tamarindus indica",
+      "family": "Fabaceae",
+      "partsUsed": "Leaves, fruit pulp",
+      "uses": [
+        "Aids digestion",
+        "Relieves constipation"
+      ],
+      "howToUse": [
+        "Eat leaf-infused water",
+        "Use fruit pulp in food or drinks"
+      ],
+      "caution": [
+        "Acidic—may erode teeth enamel",
+        "Avoid excessive intake during pregnancy"
+      ],
+      "foundIn": "Common in Mangalore region",
+      "wikiUrl": "https://en.wikipedia.org/wiki/Tamarindus_indica",
+      "symptoms": ["Constipation", "Indigestion"]
+    }
+  }
+}
