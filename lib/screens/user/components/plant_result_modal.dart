@@ -19,6 +19,7 @@ import 'package:url_launcher/url_launcher.dart';
 class PlantResultModal extends StatefulWidget {
   final int classId;
   final double confidence;
+  final String? scanKey;
   final VoidCallback? onDownloadPdf;
   final VoidCallback? onBookmark;
   final VoidCallback? onScrollMore;
@@ -29,6 +30,7 @@ class PlantResultModal extends StatefulWidget {
     Key? key,
     required this.classId,
     required this.confidence,
+    this.scanKey,
     this.onDownloadPdf,
     this.onBookmark,
     this.onScrollMore,
@@ -444,6 +446,51 @@ class _PlantResultModalState extends State<PlantResultModal> {
     final file = File('${tempDir.path}/$fileName');
     await file.writeAsBytes(pdfBytes);
     await Share.shareXFiles([XFile(file.path)], text: 'Here is your Herbal-i PDF!');
+
+    // 6. Increment sharePdfCount for the scan
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user != null && !_isNotALeaf && widget.classId >= 0 && widget.classId < TOTAL_PLANTS_COUNT) {
+        final scansRef = FirebaseDatabase.instance.ref('scans/${user.uid}');
+        if (widget.scanKey != null) {
+          // Directly increment for the known scan
+          final shareCountRef = scansRef.child('${widget.scanKey}/sharePdfCount');
+          final shareCountSnapshot = await shareCountRef.get();
+          int currentCount = 0;
+          if (shareCountSnapshot.exists && shareCountSnapshot.value is int) {
+            currentCount = shareCountSnapshot.value as int;
+          }
+          await shareCountRef.set(currentCount + 1);
+        } else {
+          // Fallback: find the latest scan for this classId
+          final scansSnapshot = await scansRef.get();
+          if (scansSnapshot.exists) {
+            DataSnapshot? latestScan;
+            for (final child in scansSnapshot.children) {
+              if (child.child('classId').value == widget.classId) {
+                if (latestScan == null ||
+                    DateTime.parse(child.child('timestamp').value as String).isAfter(
+                        DateTime.parse(latestScan.child('timestamp').value as String))) {
+                  latestScan = child;
+                }
+              }
+            }
+            if (latestScan != null) {
+              final scanKey = latestScan.key;
+              final shareCountRef = scansRef.child('$scanKey/sharePdfCount');
+              final shareCountSnapshot = await shareCountRef.get();
+              int currentCount = 0;
+              if (shareCountSnapshot.exists && shareCountSnapshot.value is int) {
+                currentCount = shareCountSnapshot.value as int;
+              }
+              await shareCountRef.set(currentCount + 1);
+            }
+          }
+        }
+      }
+    } catch (e) {
+      // Silently ignore errors to not break sharing
+    }
   }
 
   Future<void> _showFeedbackDialog() async {

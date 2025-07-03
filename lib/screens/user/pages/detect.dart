@@ -213,7 +213,7 @@ class _DetectPageState extends State<DetectPage> {
           );
         } else {
           // Valid plant detection - save to database and show result
-          await _saveScanResultToDatabase(
+          final scanKey = await _saveScanResultToDatabase(
             classId: _detectedClassId!,
             confidence: _confidence ?? 0.0,
             plantName: _detectedPlant ?? '',
@@ -223,6 +223,7 @@ class _DetectPageState extends State<DetectPage> {
             builder: (ctx) => PlantResultModal(
               classId: _detectedClassId!,
               confidence: _confidence ?? 0.0,
+              scanKey: scanKey,
               onClosed: () async {
                 await Future.delayed(const Duration(milliseconds: 200));
                 await showDialog(
@@ -669,7 +670,7 @@ class _DetectPageState extends State<DetectPage> {
     );
   }
 
-  Future<void> _saveScanResultToDatabase({
+  Future<String?> _saveScanResultToDatabase({
     required int classId,
     required double confidence,
     required String plantName,
@@ -677,21 +678,18 @@ class _DetectPageState extends State<DetectPage> {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       print('No user logged in');
-      return;
+      return null;
     }
-    
     // Validate class ID range
     if (classId < 0 || classId >= ML_CLASSES_COUNT) {
       print('❌ Invalid class ID for scan: $classId (must be 0-${ML_CLASSES_COUNT - 1})');
-      return;
+      return null;
     }
-    
     // Do not save 'Not a Leaf' scans
     if (classId == NOT_A_LEAF_CLASS_ID) {
       print('Not saving scan: Detected class is "Not a Leaf".');
-      return;
+      return null;
     }
-    
     try {
       final scansRef = FirebaseDatabase.instance.ref('scans/${user.uid}').push();
       await scansRef.set({
@@ -700,9 +698,11 @@ class _DetectPageState extends State<DetectPage> {
         'plantName': plantName,
         'timestamp': DateTime.now().toIso8601String(),
       });
-      print('Scan result saved to Realtime Database.');
+      print('Scan result saved to Realtime Database. Key: ${scansRef.key}');
+      return scansRef.key;
     } catch (e) {
       print('Failed to save scan result to database: $e');
+      return null;
     }
   }
 }

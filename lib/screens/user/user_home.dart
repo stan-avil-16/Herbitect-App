@@ -43,12 +43,7 @@ class _UserHomeState extends State<UserHome> with WidgetsBindingObserver {
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) async {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.detached) {
-      final user = FirebaseAuth.instance.currentUser;
-      if (user != null) {
-        await FirebaseAuth.instance.signOut();
-      }
-    }
+    // No sign out on pause or detach. Let Firebase handle session persistence.
   }
 
   void _onItemTapped(int index) {

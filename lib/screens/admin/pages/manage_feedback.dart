@@ -17,6 +17,7 @@ class _ManageFeedbackPageState extends State<ManageFeedbackPage> {
   String _statusFilter = 'all'; // all, seen, unseen
   Map<String, Map<String, dynamic>> _userDetails = {};
   Map<String, Map<String, dynamic>> _plantDetails = {};
+  Map<String, int> _feedbackCounts = {};
 
   @override
   void initState() {
@@ -62,6 +63,23 @@ class _ManageFeedbackPageState extends State<ManageFeedbackPage> {
 
       // Fetch user and plant details
       await _fetchUserAndPlantDetails();
+
+      // Fetch all feedback once
+      final feedbackSnap = await FirebaseDatabase.instance.ref('feedback').get();
+      Map<String, int> feedbackCounts = {};
+      if (feedbackSnap.exists) {
+        final data = feedbackSnap.value;
+        if (data is Map) {
+          for (var entry in data.values) {
+            if (entry is Map && entry['userId'] != null) {
+              final uid = entry['userId'].toString();
+              feedbackCounts[uid] = (feedbackCounts[uid] ?? 0) + 1;
+            }
+          }
+        }
+      }
+      // Then, for each user:
+      _feedbackCounts = feedbackCounts;
     } catch (e) {
       setState(() { _error = 'Failed to load feedback: $e'; _loading = false; });
     }
