@@ -15,6 +15,7 @@ import 'dart:ui' as ui;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:herbal_i/screens/user/components/plant_result_modal.dart';
+import 'dart:typed_data';
 
 // Constants for plant database management
 const int ML_CLASSES_COUNT = 41; // Classes 0-40 (including "Not a Leaf")
@@ -256,7 +257,6 @@ class _DetectPageState extends State<DetectPage> {
     for (var det in detections) {
       final objConf = det[4];
       if (objConf > confThreshold) {
-        // Find class with max score
         double maxClassScore = 0.0;
         int maxClassIdx = -1;
         for (int i = 5; i < det.length; i++) {
@@ -272,21 +272,16 @@ class _DetectPageState extends State<DetectPage> {
         }
       }
     }
-    
-    // Validate that the detected class is within our ML model range
     if (bestClass >= 0 && bestClass < ML_CLASSES_COUNT) {
       String label = _labels[bestClass];
-      
-      // Special handling for "Not a Leaf" class
       if (bestClass == NOT_A_LEAF_CLASS_ID) {
-    return {
+        return {
           'label': 'Not a Leaf',
-      'confidence': bestConf,
-      'classId': bestClass,
+          'confidence': bestConf,
+          'classId': bestClass,
           'isNotALeaf': true,
         };
       }
-      
       return {
         'label': label,
         'confidence': bestConf,
@@ -294,7 +289,6 @@ class _DetectPageState extends State<DetectPage> {
         'isNotALeaf': false,
       };
     }
-    
     return {
       'label': 'No detection',
       'confidence': 0.0,
@@ -723,6 +717,7 @@ class _RealTimeCameraScreenState extends State<RealTimeCameraScreen> {
   double _confidence = 0.0;
   List<String> _labels = [];
   String _errorMessage = '';
+  int _frameCount = 0;
 
   @override
   void initState() {
@@ -789,85 +784,134 @@ class _RealTimeCameraScreenState extends State<RealTimeCameraScreen> {
   }
 
   void _startImageStream() {
-    _controller!.startImageStream((CameraImage image) {
-      if (_isDetecting || _interpreter == null) return;
+    _controller!.startImageStream((CameraImage image) async {
+      _frameCount++;
+      if (_frameCount % 10 != 0) return; // Throttle: process every 10th frame
+      if (_isDetecting || _interpreter == null || _labels.isEmpty) return;
       _isDetecting = true;
-
       try {
-        // Convert camera image to input tensor
-        var input = _convertCameraImageToInput(image);
-        var output = List.filled(1 * ML_CLASSES_COUNT, 0.0).reshape([1, ML_CLASSES_COUNT]); // 41 classes
-
-        // Run inference
-        _interpreter!.run(input, output);
-
-        // Get the index of the highest confidence
-        var maxScore = 0.0;
-        var maxIndex = 0;
-        for (var i = 0; i < ML_CLASSES_COUNT; i++) {
-          if (output[0][i] > maxScore) {
-            maxScore = output[0][i];
-            maxIndex = i;
+        // Use robust static image pipeline for real-time
+        var input = await _preprocessCameraImageLikeStatic(image);
+        // Prepare output buffer
+        final outputShape = _interpreter!.getOutputTensor(0).shape;
+        var outputBuffer = List.filled(outputShape.reduce((a, b) => a * b), 0.0).reshape(outputShape);
+        _interpreter!.run(input, outputBuffer);
+        if (outputShape.length == 2 && outputShape[1] == ML_CLASSES_COUNT) {
+          // Classifier output
+          final scores = outputBuffer[0];
+          double bestConf = 0.0;
+          int bestClass = -1;
+          for (int i = 0; i < scores.length; i++) {
+            if (scores[i] > bestConf) {
+              bestConf = scores[i];
+              bestClass = i;
+            }
+          }
+          if (mounted) {
+            setState(() {
+              if (bestClass == NOT_A_LEAF_CLASS_ID) {
+                _detectedPlant = 'Not a Leaf';
+              } else {
+                _detectedPlant = _labels[bestClass];
+              }
+              _confidence = bestConf;
+              _errorMessage = '';
+            });
+          }
+        } else {
+          // YOLO output
+          final best = _postProcessYOLO(outputBuffer);
+          if (mounted) {
+            setState(() {
+              if (best['classId'] == NOT_A_LEAF_CLASS_ID) {
+                _detectedPlant = 'Not a Leaf';
+              } else {
+                _detectedPlant = best['label'] ?? '';
+              }
+              _confidence = best['confidence'] ?? 0.0;
+              _errorMessage = '';
+            });
           }
         }
-
+      } catch (e, st) {
+        print('❌ Error processing frame: $e\n$st');
         if (mounted) {
           setState(() {
-            // Handle "Not a Leaf" detection
-            if (maxIndex == NOT_A_LEAF_CLASS_ID) {
-              _detectedPlant = 'Not a Leaf';
-            } else {
-            _detectedPlant = _labels[maxIndex];
-            }
-            _confidence = maxScore;
-            _errorMessage = '';
-          });
-        }
-      } catch (e) {
-        if (kDebugMode) {
-          print('❌ Error processing frame: $e');
-        }
-        if (mounted) {
-          setState(() {
-            _errorMessage = 'Error processing frame';
+            _errorMessage = 'Error processing frame: $e';
           });
         }
       }
-
       _isDetecting = false;
     });
   }
 
-  List<List<List<List<double>>>> _convertCameraImageToInput(CameraImage image) {
-    // Convert YUV420 to RGB
-    final int width = image.width;
-    final int height = image.height;
-    final int uvRowStride = image.planes[1].bytesPerRow;
-    final int uvPixelStride = image.planes[1].bytesPerPixel!;
-
-    var rgb = List.generate(
-      height,
-      (y) => List.generate(
-        width,
-        (x) {
-          final int uvIndex = uvPixelStride * (x / 2).floor() + uvRowStride * (y / 2).floor();
+  Future<List<List<List<List<double>>>>> _preprocessCameraImageLikeStatic(CameraImage image) async {
+    // Convert CameraImage (YUV420) to JPEG, then decode as ui.Image, then resize and convert to tensor
+    try {
+      // Convert YUV420 to RGB image using image package
+      final int width = image.width;
+      final int height = image.height;
+      final int uvRowStride = image.planes[1].bytesPerRow;
+      final int uvPixelStride = image.planes[1].bytesPerPixel!;
+      final rgbBytes = Uint8List(width * height * 3);
+      int byteIndex = 0;
+      for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+          final int uvIndex = uvPixelStride * (x ~/ 2) + uvRowStride * (y ~/ 2);
           final int index = y * width + x;
-
           final yp = image.planes[0].bytes[index];
           final up = image.planes[1].bytes[uvIndex];
           final vp = image.planes[2].bytes[uvIndex];
-
-          // Convert YUV to RGB
           int r = (yp + vp * 1436 / 1024 - 179).round().clamp(0, 255);
           int g = (yp - up * 46549 / 131072 + 44 - vp * 93604 / 131072 + 91).round().clamp(0, 255);
           int b = (yp + up * 1814 / 1024 - 227).round().clamp(0, 255);
-
-          return [r / 255.0, g / 255.0, b / 255.0];
-        },
-      ),
-    );
-
-    return [rgb];
+          rgbBytes[byteIndex++] = r;
+          rgbBytes[byteIndex++] = g;
+          rgbBytes[byteIndex++] = b;
+        }
+      }
+      // Encode to JPEG in memory
+      final img.Image rgbImg = img.Image.fromBytes(
+        width: width,
+        height: height,
+        bytes: rgbBytes.buffer,
+        order: img.ChannelOrder.rgb,
+      );
+      final jpegBytes = Uint8List.fromList(img.encodeJpg(rgbImg));
+      // Decode as ui.Image (same as static image pipeline)
+      final uiImage = await decodeImageFromList(jpegBytes);
+      // Resize and convert to tensor (same as static image pipeline)
+      final recorder = ui.PictureRecorder();
+      final canvas = Canvas(recorder);
+      canvas.drawImageRect(
+        uiImage,
+        Rect.fromLTWH(0, 0, uiImage.width.toDouble(), uiImage.height.toDouble()),
+        Rect.fromLTWH(0, 0, 640.0, 640.0),
+        Paint()..filterQuality = FilterQuality.high,
+      );
+      final picture = recorder.endRecording();
+      final resizedImage = await picture.toImage(640, 640);
+      final byteData = await resizedImage.toByteData(format: ui.ImageByteFormat.rawRgba);
+      final pixels = byteData!.buffer.asUint8List();
+      var imageMatrix = List.generate(
+        640,
+        (y) => List.generate(
+          640,
+          (x) {
+            final pixelIndex = (y * 640 + x) * 4;
+            return [
+              pixels[pixelIndex + 2].toDouble(), // B
+              pixels[pixelIndex + 1].toDouble(), // G
+              pixels[pixelIndex + 0].toDouble(), // R
+            ];
+          },
+        ),
+      );
+      return [imageMatrix];
+    } catch (e) {
+      print('❌ Error in robust camera preprocessing: $e');
+      throw Exception('Failed to preprocess camera frame: $e');
+    }
   }
 
   @override
@@ -948,6 +992,55 @@ class _RealTimeCameraScreenState extends State<RealTimeCameraScreen> {
         ],
       ),
     );
+  }
+
+  Map<String, dynamic> _postProcessYOLO(List outputBuffer, {double confThreshold = 0.25}) {
+    // outputBuffer shape: [1, 25200, 45] (YOLOv5/YOLOv8)
+    // Each detection: [x, y, w, h, obj_conf, class1, class2, ..., classN]
+    final detections = outputBuffer[0];
+    double bestConf = 0.0;
+    int bestClass = -1;
+    for (var det in detections) {
+      final objConf = det[4];
+      if (objConf > confThreshold) {
+        double maxClassScore = 0.0;
+        int maxClassIdx = -1;
+        for (int i = 5; i < det.length; i++) {
+          if (det[i] > maxClassScore) {
+            maxClassScore = det[i];
+            maxClassIdx = i - 5;
+          }
+        }
+        final conf = objConf * maxClassScore;
+        if (conf > bestConf) {
+          bestConf = conf;
+          bestClass = maxClassIdx;
+        }
+      }
+    }
+    if (bestClass >= 0 && bestClass < ML_CLASSES_COUNT) {
+      String label = _labels[bestClass];
+      if (bestClass == NOT_A_LEAF_CLASS_ID) {
+        return {
+          'label': 'Not a Leaf',
+          'confidence': bestConf,
+          'classId': bestClass,
+          'isNotALeaf': true,
+        };
+      }
+      return {
+        'label': label,
+        'confidence': bestConf,
+        'classId': bestClass,
+        'isNotALeaf': false,
+      };
+    }
+    return {
+      'label': 'No detection',
+      'confidence': 0.0,
+      'classId': -1,
+      'isNotALeaf': false,
+    };
   }
 }
 
