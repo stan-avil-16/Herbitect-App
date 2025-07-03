@@ -154,7 +154,7 @@ class _ManageFeedbackPageState extends State<ManageFeedbackPage> {
     }
     
     if (_error != null) {
-      return Center(
+    return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -473,4 +473,4 @@ class _ManageFeedbackPageState extends State<ManageFeedbackPage> {
       ),
     );
   }
-} 
+}
