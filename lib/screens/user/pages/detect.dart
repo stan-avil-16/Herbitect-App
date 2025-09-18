@@ -380,12 +380,18 @@ class _DetectPageState extends State<DetectPage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        Positioned.fill(
+          child: Image.asset(
+            'assets/detect.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
         Scaffold(
-      backgroundColor: const Color(0xFFF5FFF5),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          backgroundColor: Colors.transparent,
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 if (_errorMessage != null)
                   Container(
                     padding: const EdgeInsets.all(16),
@@ -399,93 +405,139 @@ class _DetectPageState extends State<DetectPage> {
                       style: const TextStyle(color: Colors.white),
                     ),
                   ),
-            const Column(
-              children: [
-                Text(
-                  "Touch to Identify",
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 28,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black,
-                    letterSpacing: 1.2,
-                  ),
-                ),
-                SizedBox(height: 8),
-                Icon(Icons.arrow_downward, size: 80, color: Colors.black),
-              ],
-            ),
-            const SizedBox(height: 40),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Column(
+                const Column(
                   children: [
-                    GestureDetector(
-                      onTap: _openGallery,
-                      child: Container(
-                        width: 75,
-                        height: 75,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(color: Colors.green, blurRadius: 6, offset: Offset(2, 2)),
-                          ],
-                        ),
-                        child: const Icon(Icons.photo_library, size: 36, color: Colors.green),
+                    Text(
+                      "Touch to Identify",
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 28,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black,
+                        letterSpacing: 1.2,
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    const Text("Gallery", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black87)),
+                    SizedBox(height: 8),
+                    Icon(Icons.arrow_downward, size: 80, color: Colors.black),
                   ],
                 ),
-                const SizedBox(width: 30),
-                GestureDetector(
-                  onTap: _openCamera,
-                  child: Container(
-                    width: 150,
-                    height: 150,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF8BC34A),
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                            BoxShadow(color: Colors.green.withAlpha(102), blurRadius: 10, offset: const Offset(2, 4)),
+                const SizedBox(height: 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Column(
+                      children: [
+                        GestureDetector(
+                          onTap: _openGallery,
+                          child: Container(
+                            width: 75,
+                            height: 75,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(color: Colors.green, blurRadius: 6, offset: Offset(2, 2)),
+                              ],
+                            ),
+                            child: const Icon(Icons.photo_library, size: 36, color: Colors.green),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        // Gallery label
+                        Stack(
+                          children: [
+                            Text(
+                              "Gallery",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 2
+                                  ..color = Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "Gallery",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
-                    child: const Center(
-                      child: Icon(Icons.photo_camera_rounded, size: 100, color: Colors.white),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 30),
-                Column(
-                  children: [
+                    const SizedBox(width: 30),
                     GestureDetector(
-                      onTap: _startRealtimeDetection,
+                      onTap: _openCamera,
                       child: Container(
-                        width: 75,
-                        height: 75,
-                        decoration: const BoxDecoration(
+                        width: 150,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF8BC34A),
                           shape: BoxShape.circle,
-                          color: Colors.white,
                           boxShadow: [
-                            BoxShadow(color: Colors.green, blurRadius: 6, offset: Offset(2, 2)),
+                                BoxShadow(color: Colors.green.withAlpha(102), blurRadius: 10, offset: const Offset(2, 4)),
                           ],
                         ),
-                        child: const Icon(Icons.center_focus_strong, size: 36, color: Colors.green),
+                        child: const Center(
+                          child: Icon(Icons.photo_camera_rounded, size: 100, color: Colors.white),
+                        ),
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    const Text("Realtime", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.black87)),
+                    const SizedBox(width: 30),
+                    Column(
+                      children: [
+                        GestureDetector(
+                          onTap: _startRealtimeDetection,
+                          child: Container(
+                            width: 75,
+                            height: 75,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(color: Colors.green, blurRadius: 6, offset: Offset(2, 2)),
+                              ],
+                            ),
+                            child: const Icon(Icons.center_focus_strong, size: 36, color: Colors.green),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        // Realtime label
+                        Stack(
+                          children: [
+                            Text(
+                              "Realtime",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 2
+                                  ..color = Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "Realtime",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ],
             ),
-          ],
-        ),
-      ),
+          ),
         ),
         if (_isProcessing)
           Container(

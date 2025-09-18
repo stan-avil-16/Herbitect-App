@@ -60,7 +60,7 @@ class _UserHomeState extends State<UserHome> with WidgetsBindingObserver {
         context: context,
         builder: (context) => AlertDialog(
           title: const Text('Confirm Exit'),
-          content: const Text('You are logged in. Do you want to logout and exit Herbal-i?'),
+          content: const Text('You are logged in. Do you want to logout and exit Herbitect?'),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(false), // Stay
@@ -100,45 +100,124 @@ class _UserHomeState extends State<UserHome> with WidgetsBindingObserver {
       },
       child: Scaffold(
         key: _scaffoldKey,
-        backgroundColor: const Color(0xFFE8F5E9),
-        appBar: AppBar(
-          backgroundColor: const Color(0xFF66BB6A),
-          title: Stack(
-            children: [
-              Text(
-                'Herbal-i 🌿',
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2,
-                  foreground: Paint()
-                    ..style = PaintingStyle.stroke
-                    ..strokeWidth = 2
-                    ..color = Colors.black,
-                ),
+        backgroundColor: const Color(0xFFF8F9FA),
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(100),
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color(0xFF2E7D32),
+                  const Color(0xFF388E3C),
+                  const Color(0xFF4CAF50),
+                  const Color(0xFF66BB6A),
+                ],
+                stops: const [0.0, 0.3, 0.7, 1.0],
               ),
-              const Text(
-                'Herbal-i 🌿',
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2,
-                  color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 10,
+                  offset: const Offset(0, 2),
                 ),
-              ),
-            ],
-          ),
-          centerTitle: true,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.person_outline),
-              onPressed: () {
-                showUserProfilePopup(context);
-              },
+              ],
             ),
-          ],
+            child: SafeArea(
+              child: Container(
+                height: 80,
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  children: [
+                    // App Logo and Title
+                    Expanded(
+                      child: Row(
+                        children: [
+                          // Animated Logo Container
+                          Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.2),
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.white.withOpacity(0.3),
+                                width: 1,
+                              ),
+                            ),
+                            child: const Icon(
+                              Icons.eco,
+                              color: Colors.white,
+                              size: 24,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          // App Title with enhanced styling
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                const Text(
+                                  'Herbitect',
+                                  style: TextStyle(
+                                    fontFamily: 'Georgia',
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  'Discover Nature\'s Medicine',
+                                  style: TextStyle(
+                                    fontSize: 11,
+                                    color: Colors.white.withOpacity(0.9),
+                                    fontWeight: FontWeight.w400,
+                                    letterSpacing: 0.3,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    // Profile Button with enhanced design
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color: Colors.white.withOpacity(0.3),
+                          width: 1,
+                        ),
+                      ),
+                      child: Material(
+                        color: Colors.transparent,
+                        child: InkWell(
+                          borderRadius: BorderRadius.circular(10),
+                          onTap: () {
+                            showUserProfilePopup(context);
+                          },
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            child: const Icon(
+                              Icons.person_outline,
+                              color: Colors.white,
+                              size: 22,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ),
         body: IndexedStack(
           index: _selectedIndex,
@@ -167,7 +246,7 @@ class _UserHomeState extends State<UserHome> with WidgetsBindingObserver {
           child: Stack(
             children: [
               Positioned(
-                top: kToolbarHeight + topPadding + 8,
+                top: 100 + topPadding + 8,
                 right: 16,
                 child: Material(
                   color: Colors.transparent,
@@ -185,7 +264,7 @@ class _UserHomeState extends State<UserHome> with WidgetsBindingObserver {
                           useRootNavigator: true,
                           builder: (context) => AlertDialog(
                             title: const Text('Confirm Exit'),
-                            content: const Text('You are logged in. Do you want to logout and exit Herbal-i?'),
+                            content: const Text('You are logged in. Do you want to logout and exit Herbitect?'),
                             actions: [
                               TextButton(
                                 onPressed: () => Navigator.of(context, rootNavigator: true).pop(false),

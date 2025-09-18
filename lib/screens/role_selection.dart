@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'admin/admin_login.dart';
 import 'user/user_home.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RoleSelection extends StatefulWidget {
   const RoleSelection({super.key});
@@ -45,86 +46,120 @@ class RoleSelectionState extends State<RoleSelection> with SingleTickerProviderS
   @override
   Widget build(BuildContext context) {
     print('RoleSelection: build called'); // Debug print
-    return Scaffold(
-      backgroundColor: const Color(0xFFE8F5E9),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Choose Your Role',
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-                color: Color(0xFF1B5E20),
-              ),
-            ).animate().fadeIn(duration: 600.ms).slideY(begin: 0.2),
-            const SizedBox(height: 40),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    return Stack(
+      children: [
+        Positioned.fill(
+          child: Image.asset(
+            'assets/role.jpg',
+            fit: BoxFit.cover,
+          ),
+        ),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                _buildRoleCard(
-                  context: context,
-                  icon: Icons.person,
-                  label: 'User',
-                  onTap: () {
-                    print('RoleSelection: User button tapped'); // Debug print
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const UserHome()),
-                    );
-                  },
-                  color: Colors.green.shade100,
-                ),
-                _buildRoleCard(
-                  context: context,
-                  icon: Icons.admin_panel_settings,
-                  label: 'Admin',
-                  onTap: () {
-                    print('RoleSelection: Admin button tapped'); // Debug print
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const AdminLoginScreen()),
-                    );
-                  },
-                  color: Colors.green.shade200,
-                ),
-              ],
-            ),
-            // Glass reflection animation over both buttons
-            AnimatedBuilder(
-              animation: _animationController,
-              builder: (context, child) {
-                return Positioned(
-                  top: 200,
-                  child: Opacity(
-                    opacity: 0.3,  // Semi-transparent effect
-                    child: Container(
-                      width: 300,
-                      height: 80,
-                      decoration: BoxDecoration(
-                        color: Colors.white.withAlpha(20),  // Glassy appearance
-                        borderRadius: BorderRadius.circular(10),
+                Stack(
+                  children: [
+                    // Black stroke
+                    Text(
+                      'Choose Your Role',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 3
+                          ..color = Colors.black,
                       ),
-                      child: FractionallySizedBox(
-                        alignment: Alignment.center,
-                        child: Transform.translate(
-                          offset: _reflectionAnimation.value,
-                          child: Container(
-                            width: 300,
-                            height: 80,
-                            color: Colors.white.withAlpha(15),
+                    ),
+                    // White fill with shadow
+                    Text(
+                      'Choose Your Role',
+                      style: GoogleFonts.montserrat(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFFAF9F6),
+                        shadows: [
+                          Shadow(
+                            blurRadius: 8,
+                            color: Colors.black.withOpacity(0.4),
+                            offset: Offset(2, 2),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ).animate().fadeIn(duration: 600.ms).slideY(begin: 0.2),
+                const SizedBox(height: 40),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _buildRoleCard(
+                      context: context,
+                      icon: Icons.person,
+                      label: 'User',
+                      onTap: () {
+                        print('RoleSelection: User button tapped'); // Debug print
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const UserHome()),
+                        );
+                      },
+                      color: Colors.green.shade100,
+                    ),
+                    _buildRoleCard(
+                      context: context,
+                      icon: Icons.admin_panel_settings,
+                      label: 'Admin',
+                      onTap: () {
+                        print('RoleSelection: Admin button tapped'); // Debug print
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const AdminLoginScreen()),
+                        );
+                      },
+                      color: Colors.green.shade200,
+                    ),
+                  ],
+                ),
+                // Glass reflection animation over both buttons
+                AnimatedBuilder(
+                  animation: _animationController,
+                  builder: (context, child) {
+                    return Positioned(
+                      top: 200,
+                      child: Opacity(
+                        opacity: 0.3,  // Semi-transparent effect
+                        child: Container(
+                          width: 300,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withAlpha(20),  // Glassy appearance
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: FractionallySizedBox(
+                            alignment: Alignment.center,
+                            child: Transform.translate(
+                              offset: _reflectionAnimation.value,
+                              child: Container(
+                                width: 300,
+                                height: 80,
+                                color: Colors.white.withAlpha(15),
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              },
+                    );
+                  },
+                ),
+              ],
             ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 

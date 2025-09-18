@@ -22,6 +22,8 @@ class SearchPageState extends State<SearchPage> {
   List<Map<String, dynamic>> filteredPlants = [];
   List<String> plantIds = [];
   bool isLoading = true;
+  bool isSearching = false;
+  bool hasSearched = false;
 
   // Constants for plant database management
   static const int ML_CLASSES_COUNT = 41; // Classes 0-40 (including "Not a Leaf")
@@ -32,6 +34,8 @@ class SearchPageState extends State<SearchPage> {
   void initState() {
     super.initState();
     _loadPlantData();
+    // Do not show any plants by default
+    filteredPlants = [];
   }
 
   @override
@@ -44,10 +48,11 @@ class SearchPageState extends State<SearchPage> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    // Clear the search bar when the page is re-entered
+    // Clear the search bar and results when the page is re-entered
     _searchController.clear();
     setState(() {
-      filteredPlants = List.from(allPlants);
+      filteredPlants = [];
+      hasSearched = false;
     });
   }
 
@@ -118,43 +123,57 @@ class SearchPageState extends State<SearchPage> {
   }
 
   void _onSearch() async {
-    final query = _searchController.text.trim().toLowerCase();
+    final query = _searchController.text.trim();
     if (query.isEmpty) {
       setState(() {
-        filteredPlants = List.from(allPlants);
+        filteredPlants = [];
+        hasSearched = false;
       });
       return;
     }
+
     setState(() {
-      // First, find exact matches (symptom exactly matches query)
-      final exactMatches = allPlants.where((plant) {
-        final symptoms = List<String>.from(plant['symptoms'] ?? []);
-        return symptoms.any((symptom) => symptom.toLowerCase() == query);
-      }).toList();
-      // Then, find partial matches (symptom contains query, but not exact)
-      final partialMatches = allPlants.where((plant) {
-        final symptoms = List<String>.from(plant['symptoms'] ?? []);
-        return symptoms.any((symptom) => symptom.toLowerCase().contains(query)) &&
-               !symptoms.any((symptom) => symptom.toLowerCase() == query);
-      }).toList();
-      filteredPlants = [...exactMatches, ...partialMatches];
+      isSearching = true;
+      hasSearched = true;
     });
-    print('🔍 Search for "$query" returned ${filteredPlants.length} plants');
-    // Log search if valid and user is logged in (Realtime DB)
-    if (filteredPlants.isNotEmpty) {
-      final user = FirebaseAuth.instance.currentUser;
-      if (user != null) {
+
+    // Simulate loading time for better UX
+    await Future.delayed(const Duration(milliseconds: 800));
+
+    // First, find exact matches (symptom exactly matches query)
+    final exactMatches = allPlants.where((plant) {
+      final symptoms = List<String>.from(plant['symptoms'] ?? []);
+      return symptoms.any((symptom) => symptom.toLowerCase() == query.toLowerCase());
+    }).toList();
+    
+    // Then, find partial matches (symptom contains query, but not exact)
+    final partialMatches = allPlants.where((plant) {
+      final symptoms = List<String>.from(plant['symptoms'] ?? []);
+      return symptoms.any((symptom) => symptom.toLowerCase().contains(query.toLowerCase())) &&
+             !symptoms.any((symptom) => symptom.toLowerCase() == query.toLowerCase());
+    }).toList();
+    
+    setState(() {
+      filteredPlants = [...exactMatches, ...partialMatches];
+      isSearching = false;
+    });
+
+    // Log search to Firebase if user is logged in
+    final user = FirebaseAuth.instance.currentUser;
+    if (user != null) {
+      try {
         final searchData = {
+          'userId': user.uid,
           'query': query,
           'timestamp': DateTime.now().toIso8601String(),
           'resultPlantIds': filteredPlants.map((p) => p['id']).toList(),
         };
         final ref = FirebaseDatabase.instance.ref('search/${user.uid}').push();
         await ref.set(searchData);
+      } catch (e) {
+        // Silently handle Firebase errors
       }
     }
-    // Clear the search bar after search
-    _searchController.text = '';
   }
 
   void _onSymptomChipTap(String symptom) {
@@ -164,29 +183,89 @@ class SearchPageState extends State<SearchPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFFF5FFF5),
-      body: Padding(
+    final isSearchActive = _searchController.text.trim().isNotEmpty;
+    
+    return Container(
+      color: const Color(0xFFF5FFF5),
+      child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: isLoading
             ? const Center(child: CircularProgressIndicator())
             : Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Search Bar
+            // Search Bar with Search Button
             TextField(
               controller: _searchController,
+              onChanged: (value) {
+                setState(() {
+                  // Force UI update when text changes
+                });
+              },
               decoration: InputDecoration(
                 labelText: 'Enter a symptom...',
                 hintText: 'e.g. Cough',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12.0),
-                        borderSide: const BorderSide(color: Colors.green),
+                  borderSide: const BorderSide(color: Colors.green),
                 ),
-                suffixIcon: IconButton(
-                  icon: const Icon(Icons.search),
-                  onPressed: _onSearch,
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                  borderSide: const BorderSide(color: Colors.green),
                 ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12.0),
+                  borderSide: const BorderSide(color: Colors.green, width: 2),
+                ),
+                filled: true,
+                fillColor: Colors.white,
+                prefixIcon: const Icon(Icons.search, color: Colors.green),
+                suffixIcon: isSearchActive
+                    ? Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            icon: const Icon(Icons.clear, color: Colors.grey),
+                            onPressed: () { 
+                              _searchController.clear(); 
+                              setState(() {
+                                filteredPlants = [];
+                                hasSearched = false;
+                              });
+                            },
+                          ),
+                          if (!isSearching)
+                            Container(
+                              margin: const EdgeInsets.only(right: 8),
+                              child: ElevatedButton(
+                                onPressed: _onSearch,
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.green,
+                                  foregroundColor: Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                  minimumSize: const Size(60, 32),
+                                ),
+                                child: const Text('Search', style: TextStyle(fontSize: 12)),
+                              ),
+                            ),
+                          if (isSearching)
+                            Container(
+                              margin: const EdgeInsets.only(right: 8),
+                              child: const SizedBox(
+                                width: 20,
+                                height: 20,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+                                ),
+                              ),
+                            ),
+                        ],
+                      )
+                    : null,
               ),
             ),
             const SizedBox(height: 20),
@@ -207,11 +286,11 @@ class SearchPageState extends State<SearchPage> {
                     .map(
                       (symptom) => Padding(
                     padding: const EdgeInsets.only(right: 10),
-                              child: ActionChip(
+                    child: ActionChip(
                       label: Text(symptom),
                       backgroundColor: Colors.green,
                       labelStyle: const TextStyle(color: Colors.white),
-                                onPressed: () => _onSymptomChipTap(symptom),
+                      onPressed: () => _onSymptomChipTap(symptom),
                     ),
                   ),
                 )
@@ -219,61 +298,88 @@ class SearchPageState extends State<SearchPage> {
               ),
             ),
             const SizedBox(height: 20),
-            // Display Plant Suggestions
-            const Text(
-              'Suggested Plants for Your Symptoms',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-                color: Colors.black87,
-              ),
-            ),
-            const SizedBox(height: 10),
+            // Results or Prompt
             Expanded(
-                    child: filteredPlants.isEmpty
-                        ? const Center(child: Text('No plants found for this symptom.'))
-                        : ListView.builder(
-                            itemCount: filteredPlants.length,
-                itemBuilder: (context, index) {
-                              final plant = filteredPlants[index];
-                              final plantId = plant['id'] ?? (plantIds.length > index ? plantIds[index] : null);
-                              Widget leadingWidget;
-                              if (plantId != null) {
-                                leadingWidget = Image.asset(
-                                  'assets/plant_img/$plantId.jpg',
-                                  width: 48,
-                                  height: 48,
-                                  fit: BoxFit.cover,
-                                  errorBuilder: (context, error, stackTrace) => const Icon(Icons.local_florist, size: 40, color: Colors.green),
-                                );
-                              } else {
-                                leadingWidget = const Icon(Icons.local_florist, size: 40, color: Colors.green);
-                              }
-                  return Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+              child: (!hasSearched)
+                  ? Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.search, size: 64, color: Colors.green.shade200),
+                          const SizedBox(height: 16),
+                          const Text(
+                            'Type the name of a symptom and tap search to see results.',
+                            style: TextStyle(fontSize: 18, color: Colors.black54),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    )
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Suggested Plants for Your Symptoms',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.black87,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        Expanded(
+                          child: isSearching
+                              ? const Center(child: CircularProgressIndicator())
+                              : filteredPlants.isEmpty
+                                  ? const Center(child: Text('No plants found for this symptom.'))
+                                  : ListView.builder(
+                                      itemCount: filteredPlants.length,
+                                      itemBuilder: (context, index) {
+                                        final plant = filteredPlants[index];
+                                        final plantId = plant['id'] ?? (plantIds.length > index ? plantIds[index] : null);
+                                        Widget leadingWidget;
+                                        if (plantId != null) {
+                                          leadingWidget = ClipRRect(
+                                            borderRadius: BorderRadius.circular(8),
+                                            child: Image.asset(
+                                              'assets/plant_img/$plantId.jpg',
+                                              width: 48,
+                                              height: 48,
+                                              fit: BoxFit.cover,
+                                              errorBuilder: (context, error, stackTrace) => const Icon(Icons.local_florist, size: 40, color: Colors.green),
+                                            ),
+                                          );
+                                        } else {
+                                          leadingWidget = const Icon(Icons.local_florist, size: 40, color: Colors.green);
+                                        }
+                                        return Card(
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(12),
+                                          ),
+                                          margin: const EdgeInsets.only(bottom: 16),
+                                          elevation: 6,
+                                          child: ListTile(
+                                            leading: leadingWidget,
+                                            title: Text(plant['name'] ?? ''),
+                                            subtitle: Text((plant['uses'] != null && plant['uses'].isNotEmpty) ? plant['uses'][0] : ''),
+                                            contentPadding: const EdgeInsets.all(16),
+                                            onTap: () {
+                                              showDialog(
+                                                context: context,
+                                                builder: (context) => PlantResultModal(
+                                                  classId: int.tryParse(plantId.toString()) ?? 0,
+                                                  confidence: 1.0,
+                                                  showConfidence: false,
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                        );
+                                      },
+                                    ),
+                        ),
+                      ],
                     ),
-                    margin: const EdgeInsets.only(bottom: 16),
-                    elevation: 6,
-                    child: ListTile(
-                                  leading: leadingWidget,
-                                  title: Text(plant['name'] ?? ''),
-                                  subtitle: Text((plant['uses'] != null && plant['uses'].isNotEmpty) ? plant['uses'][0] : ''),
-                      contentPadding: const EdgeInsets.all(16),
-                      onTap: () {
-                                    showDialog(
-                                      context: context,
-                                      builder: (context) => PlantResultModal(
-                                        classId: int.tryParse(plantId.toString()) ?? 0,
-                                        confidence: 1.0,
-                                        showConfidence: false,
-                                      ),
-                                    );
-                      },
-                    ),
-                  );
-                },
-              ),
             ),
           ],
         ),

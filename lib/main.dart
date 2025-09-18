@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
@@ -18,6 +19,15 @@ void main() async {
   print('App: Starting main function'); // Debug print
   WidgetsFlutterBinding.ensureInitialized();
   print('App: Flutter binding initialized'); // Debug print
+  
+  // Set system UI overlay style immediately to prevent black screen
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.transparent,
+    ),
+  );
   
   // Initialize Firebase
   print('App: Initializing Firebase'); // Debug print
@@ -54,8 +64,12 @@ class HerbalIApp extends StatelessWidget {
   Widget build(BuildContext context) {
     print('App: HerbalIApp build called'); // Debug print
     return MaterialApp(
-      title: 'Herbal-i',
+      title: 'Herbitect',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        scaffoldBackgroundColor: const Color(0xFFE8F5E9), // Light green background
+      ),
       initialRoute: '/splash',
       routes: {
         '/splash': (context) => const SplashScreen(),

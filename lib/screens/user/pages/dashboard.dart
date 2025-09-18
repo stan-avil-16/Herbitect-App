@@ -102,7 +102,7 @@ class _DashboardPageState extends State<DashboardPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
                     Text(
-                      "Welcome to Herbal-i!",
+                      "Welcome to Herbitect!",
                       style: GoogleFonts.poppins(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

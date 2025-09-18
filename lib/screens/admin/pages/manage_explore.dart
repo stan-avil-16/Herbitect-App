@@ -301,7 +301,12 @@ class _EditContentDialogState extends State<EditContentDialog> {
       Map<String, dynamic> update;
       if (widget.type == ContentType.spotlight) {
         ref = FirebaseDatabase.instance.ref('spotlight/${widget.item['id'] ?? widget.item['id'] ?? ''}');
-        update = {'spotlight': _spotlightController.text.trim()};
+        // Add 🌿 prefix to spotlight content if not already present
+        String spotlightText = _spotlightController.text.trim();
+        if (!spotlightText.startsWith('🌿')) {
+          spotlightText = '🌿 $spotlightText';
+        }
+        update = {'spotlight': spotlightText};
       } else {
         ref = FirebaseDatabase.instance.ref('explore/${widget.item['id'] ?? widget.item['id'] ?? ''}');
         update = {
@@ -391,7 +396,12 @@ class _AddContentDialogState extends State<AddContentDialog> {
       Map<String, dynamic> data;
       if (_type == ContentType.spotlight) {
         ref = FirebaseDatabase.instance.ref('spotlight').push();
-        data = {'spotlight': _spotlightController.text.trim()};
+        // Add 🌿 prefix to spotlight content if not already present
+        String spotlightText = _spotlightController.text.trim();
+        if (!spotlightText.startsWith('🌿')) {
+          spotlightText = '🌿 $spotlightText';
+        }
+        data = {'spotlight': spotlightText};
       } else {
         ref = FirebaseDatabase.instance.ref('explore').push();
         data = {

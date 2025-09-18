@@ -330,7 +330,7 @@ class _PlantResultModalState extends State<PlantResultModal> {
         ? (plantData!['caution'] as List).map((e) => e.toString()).toList()
         : (plantData?['caution']?.toString().split('\n') ?? []);
     final foundIn = plantData?['foundIn'] ?? '';
-    final thankYou = 'Thank you! Visit the Herbal-i App again.';
+    final thankYou = 'Thank you! Visit the Herbitect App again.';
 
     pdf.addPage(
       pw.Page(
@@ -356,7 +356,7 @@ class _PlantResultModalState extends State<PlantResultModal> {
                   pw.SizedBox(height: 24),
                   pw.Center(
                     child: pw.Text(
-                      'Herbal-i',
+                      'Herbitect',
                       style: pw.TextStyle(fontSize: 32, fontWeight: pw.FontWeight.bold, color: fadedGreen),
                     ),
                   ),
@@ -442,10 +442,10 @@ class _PlantResultModalState extends State<PlantResultModal> {
 
     // 5. Save to temp file and share
     final tempDir = await getTemporaryDirectory();
-    final fileName = '${plantName.replaceAll('/', '-')}-Herbal-i.pdf';
+    final fileName = '${plantName.replaceAll('/', '-')}-Herbitect.pdf';
     final file = File('${tempDir.path}/$fileName');
     await file.writeAsBytes(pdfBytes);
-    await Share.shareXFiles([XFile(file.path)], text: 'Here is your Herbal-i PDF!');
+    await Share.shareXFiles([XFile(file.path)], text: 'Here is your Herbitect PDF!');
 
     // 6. Increment sharePdfCount for the scan
     try {

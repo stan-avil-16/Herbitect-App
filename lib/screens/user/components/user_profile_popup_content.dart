@@ -74,7 +74,7 @@ class UserProfilePopupContent extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                          "Please login or sign up to personalize your Herbal-i experience.",
+                          "Please login or sign up to personalize your Herbitect experience.",
                           style: TextStyle(
                             color: Colors.white70,
                             fontSize: 14,

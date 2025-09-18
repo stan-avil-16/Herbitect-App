@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:pinput/pinput.dart';
 import 'user_home.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:ui'; // Added for ImageFilter
 
 class SignupPage extends StatefulWidget {
   final int? redirectToPlantId;
@@ -261,137 +263,260 @@ class _SignupPageState extends State<SignupPage> {
     OutlineInputBorder defaultBorder = OutlineInputBorder(borderSide: BorderSide(color: Colors.grey.shade400));
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Sign Up',
-          style: TextStyle(
-            color: Colors.white,
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.bold,
-            fontSize: 24,
+      extendBodyBehindAppBar: true,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(120),
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF2E7D32),
+                const Color(0xFF388E3C),
+                const Color(0xFF4CAF50),
+                const Color(0xFF66BB6A),
+              ],
+              stops: const [0.0, 0.3, 0.7, 1.0],
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                blurRadius: 10,
+                offset: const Offset(0, 2),
+              ),
+            ],
           ),
-        ),
-        centerTitle: true,
-        backgroundColor: Color(0xFF66BB6A),
-        iconTheme: IconThemeData(color: Colors.white),
-      ),
-      body: Center(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                TextField(
-                  controller: _nameController,
-                  decoration: InputDecoration(
-                    labelText: 'Name',
-                    border: defaultBorder,
-                    enabled: !_showOtpInput,
-                  ),
-                  readOnly: _showOtpInput,
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _emailController,
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                    border: defaultBorder,
-                     enabled: !_showOtpInput,
-                  ),
-                   readOnly: _showOtpInput,
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _passwordController,
-                  decoration: InputDecoration(
-                    labelText: 'Password (min. 6 characters)',
-                    border: defaultBorder,
-                    enabled: !_showOtpInput,
-                    suffixIcon: isPasswordValid ? const Icon(Icons.check, color: Colors.green) : null,
-                    focusedBorder: isPasswordValid ? greenBorder : (showPasswordError ? redBorder : null),
-                    enabledBorder: isPasswordValid ? greenBorder : (showPasswordError ? redBorder : defaultBorder),
-                  ),
-                  obscureText: true,
-                  readOnly: _showOtpInput,
-                ),
-                if (showPasswordError)
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 4, left: 4),
-                      child: Text('Password should be at least 6 characters', style: TextStyle(color: Colors.red, fontSize: 12)),
+          child: SafeArea(
+            child: Container(
+              height: 100,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Row(
+                children: [
+                  // Back button
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                        color: Colors.white.withOpacity(0.3),
+                        width: 1,
+                      ),
+                    ),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(10),
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(builder: (context) => const UserHome()),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          child: const Icon(
+                            Icons.arrow_back,
+                            color: Colors.white,
+                            size: 22,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _confirmPasswordController,
-                  decoration: InputDecoration(
-                    labelText: 'Confirm Password',
-                    border: defaultBorder,
-                    enabled: !_showOtpInput,
-                    suffixIcon: showConfirmSuccess ? const Icon(Icons.check, color: Colors.green) : (showConfirmError ? const Icon(Icons.error, color: Colors.red) : null),
-                    focusedBorder: showConfirmSuccess ? greenBorder : (showConfirmError ? redBorder : null),
-                    enabledBorder: showConfirmSuccess ? greenBorder: (showConfirmError ? redBorder : defaultBorder),
-                  ),
-                  obscureText: true,
-                  readOnly: _showOtpInput,
-                ),
-                if (showConfirmError)
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 4, left: 4),
-                      child: Text('Passwords do not match', style: TextStyle(color: Colors.red, fontSize: 12)),
+                  const SizedBox(width: 16),
+                  // Title section
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 32,
+                              height: 32,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.2),
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: Colors.white.withOpacity(0.3),
+                                  width: 1,
+                                ),
+                              ),
+                              child: const Icon(
+                                Icons.person_add,
+                                color: Colors.white,
+                                size: 18,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            const Text(
+                              'Join Herbitect',
+                              style: TextStyle(
+                                fontFamily: 'Georgia',
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                letterSpacing: 0.5,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Create your account to get started',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.white.withOpacity(0.9),
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 0.3,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                if (showConfirmSuccess)
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 4, left: 4),
-                      child: Text('Passwords match', style: TextStyle(color: Colors.green, fontSize: 12)),
-                    ),
-                  ),
-                const SizedBox(height: 24),
-                if (!_showOtpInput)
-                  ElevatedButton(
-                    onPressed: _isFormValid && !_isSendingOtp ? _sendOTP : null,
-                    child: _isSendingOtp
-                        ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2))
-                        : const Text('Send OTP'),
-                  ),
-                if (_showOtpInput) ...[
-                  const Text("Enter OTP sent to your email", style: TextStyle(fontSize: 16)),
-                  const SizedBox(height: 16),
-                  Pinput(
-                    length: 6,
-                    controller: _otpController,
-                    pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
-                    showCursor: true,
-                  ),
-                  const SizedBox(height: 24),
-                  ElevatedButton(
-                    onPressed: _isRegistering ? null : _verifyOtpAndRegister,
-                    child: _isRegistering
-                        ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2))
-                        : const Text('Register'),
                   ),
                 ],
-                if (_errorMessage != null)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                    child: Text(
-                      _errorMessage!,
-                      style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w600),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-              ],
+              ),
             ),
           ),
         ),
+      ),
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset(
+              'assets/login.jpg',
+              fit: BoxFit.cover,
+            ),
+          ),
+          Center(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    TextField(
+                      controller: _nameController,
+                      decoration: InputDecoration(
+                        labelText: 'Name',
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                        enabled: !_showOtpInput,
+                      ),
+                      readOnly: _showOtpInput,
+                    ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: _emailController,
+                      decoration: InputDecoration(
+                        labelText: 'Email',
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                        enabled: !_showOtpInput,
+                      ),
+                       readOnly: _showOtpInput,
+                    ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: _passwordController,
+                      decoration: InputDecoration(
+                        labelText: 'Password (min. 6 characters)',
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                        enabled: !_showOtpInput,
+                        suffixIcon: isPasswordValid ? const Icon(Icons.check, color: Colors.green) : null,
+                        focusedBorder: isPasswordValid ? greenBorder : (showPasswordError ? redBorder : null),
+                        enabledBorder: isPasswordValid ? greenBorder : (showPasswordError ? redBorder : defaultBorder),
+                      ),
+                      obscureText: true,
+                      readOnly: _showOtpInput,
+                    ),
+                    if (showPasswordError)
+                      const Align(
+                        alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 4, left: 4),
+                          child: Text('Password should be at least 6 characters', style: TextStyle(color: Colors.red, fontSize: 12)),
+                        ),
+                      ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: _confirmPasswordController,
+                      decoration: InputDecoration(
+                        labelText: 'Confirm Password',
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                        enabled: !_showOtpInput,
+                        suffixIcon: showConfirmSuccess ? const Icon(Icons.check, color: Colors.green) : (showConfirmError ? const Icon(Icons.error, color: Colors.red) : null),
+                        focusedBorder: showConfirmSuccess ? greenBorder : (showConfirmError ? redBorder : null),
+                        enabledBorder: showConfirmSuccess ? greenBorder: (showConfirmError ? redBorder : defaultBorder),
+                      ),
+                      obscureText: true,
+                      readOnly: _showOtpInput,
+                    ),
+                    if (showConfirmError)
+                      const Align(
+                        alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 4, left: 4),
+                          child: Text('Passwords do not match', style: TextStyle(color: Colors.red, fontSize: 12)),
+                        ),
+                      ),
+                    if (showConfirmSuccess)
+                      const Align(
+                        alignment: Alignment.centerLeft,
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 4, left: 4),
+                          child: Text('Passwords match', style: TextStyle(color: Colors.green, fontSize: 12)),
+                        ),
+                      ),
+                    const SizedBox(height: 24),
+                    if (!_showOtpInput)
+                      ElevatedButton(
+                        onPressed: _isFormValid && !_isSendingOtp ? _sendOTP : null,
+                        child: _isSendingOtp
+                            ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                            : const Text('Send OTP'),
+                      ),
+                    if (_showOtpInput) ...[
+                      const Text("Enter OTP sent to your email", style: TextStyle(fontSize: 16)),
+                      const SizedBox(height: 16),
+                      Pinput(
+                        length: 6,
+                        controller: _otpController,
+                        pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
+                        showCursor: true,
+                      ),
+                      const SizedBox(height: 24),
+                      ElevatedButton(
+                        onPressed: _isRegistering ? null : _verifyOtpAndRegister,
+                        child: _isRegistering
+                            ? const SizedBox(height: 20, width: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                            : const Text('Register'),
+                      ),
+                    ],
+                    if (_errorMessage != null)
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                        child: Text(
+                          _errorMessage!,
+                          style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w600),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
