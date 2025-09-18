@@ -1,16 +1,21 @@
-# herbal_i
+# Herbal_i
 
-A new Flutter project.
+Project files tracked with Git and Git LFS.
 
 ## Getting Started
+- Clone: git clone https://github.com/stan-avil-16/herbal_i.git
+- Install Git LFS once: git lfs install
+- Pull LFS files: git lfs pull
 
-This project is a starting point for a Flutter application.
+## Development
+- Keep large/binary assets in LFS (images, media, models, zips).
+- Do not commit data dumps or build outputs; they are ignored by .gitignore.
 
-A few resources to get you started if this is your first Flutter project:
+## Large Files
+If you see a file >100 MB, ensure it's matched by .gitattributes (LFS). To add new patterns:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`ash
+git lfs track "path/or/pattern/*"
+`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Commit the updated .gitattributes.
